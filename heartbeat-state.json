@@ -1,28 +1,28 @@
 {
   "lastChecks": {
-    "heartbeat": 1781091045000,
-    "subagents": 1781091045000,
-    "cron": 1781091045000,
-    "memory": 1781091045000,
-    "ssl": 1781084700000,
-    "deployVerify": 1781084700000
+    "heartbeat": 1781094600000,
+    "subagents": 1781094600000,
+    "cron": 1781094600000,
+    "memory": 1781094600000,
+    "ssl": 1781094600000,
+    "deployVerify": 1781094600000
   },
-  "lastSessionActivity": "2026-06-10T18:50:45+08:00",
+  "lastSessionActivity": "2026-06-10T19:30:23+08:00",
   "bossLastSeen": "2026-06-10T10:27:54+08:00",
-  "bossStatus": "6/10 10:27 桌面清理；v4-CNAMES 闭环 5/5 绿；老板离线 503m silent",
-  "bossOfflineMinutes": 503,
+  "bossStatus": "6/10 10:27 桌面清理；www→apex 301 闭环 6/6 绿；老板离线 568m silent",
+  "bossOfflineMinutes": 568,
   "activeSubagent": null,
   "findings": [
-    "18:50 poll：silent pass，无新事件",
-    "michael 17:42 后无新条目（v4-CNAMES 闭环仍绿，68m 无更新）",
-    "无 active subagent；无 pending task",
-    "boss 离线 503m（10:27 桌面清理后未上线）",
-    "今日 5 个 feedback 文件已归档，v3 修复线收敛"
+    "19:30 poll：michael 19:00 后无新 mtime（静默 30min）",
+    "feedback 17:41 后无新文件（静默 49min）",
+    "KALIS 6/6 闭环持续；无 subagent / 无 pending",
+    "老板离线 568m 持续 silent",
+    "cron: michael-log-poll 19:30 ok / weekly-check 下周一 10:00"
   ],
   "nextSteps": [
     "继续 5min silent pass",
-    "等老板回来验收 KALIS 部署",
-    "留意 michael 是否有 v5 或新任务"
+    "等老板回来验收 KALIS（建议不再打扰）",
+    "留意 michael 是否有新任务"
   ],
-  "notes": "6/10 18:50 michael-poll：silent pass，v4 闭环绿，无新任务"
+  "notes": "6/10 19:30 silent pass：michael+feedback 静默，KALIS 闭环稳定，老板离线 568m"
 }
