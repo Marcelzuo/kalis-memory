@@ -1,28 +1,29 @@
 {
   "lastChecks": {
-    "heartbeat": 1781094600000,
-    "subagents": 1781094600000,
-    "cron": 1781094600000,
-    "memory": 1781094600000,
-    "ssl": 1781094600000,
-    "deployVerify": 1781094600000
+    "heartbeat": 1781144146462,
+    "subagents": 1781144146462,
+    "cron": 1781144146462,
+    "memory": 1781144146462,
+    "ssl": 1781144146462,
+    "deployVerify": 1781144146462
   },
-  "lastSessionActivity": "2026-06-10T19:30:23+08:00",
+  "lastSessionActivity": "2026-06-11T10:15:46+08:00",
   "bossLastSeen": "2026-06-10T10:27:54+08:00",
-  "bossStatus": "6/10 10:27 桌面清理；www→apex 301 闭环 6/6 绿；老板离线 568m silent",
-  "bossOfflineMinutes": 568,
+  "bossStatus": "6/10 10:27 桌面清理；www→apex 301 闭环 6/6 绿；老板离线过夜 silent",
+  "bossOfflineMinutes": 1427,
   "activeSubagent": null,
   "findings": [
-    "19:30 poll：michael 19:00 后无新 mtime（静默 30min）",
-    "feedback 17:41 后无新文件（静默 49min）",
-    "KALIS 6/6 闭环持续；无 subagent / 无 pending",
-    "老板离线 568m 持续 silent",
-    "cron: michael-log-poll 19:30 ok / weekly-check 下周一 10:00"
+    "10:15 silent pass：michael/feedback/lucifer/mamen/shared 10min 内无新 mtime",
+    "michael 静默 15h15+（上次 6/10 19:00 www→apex 301 修复归档）",
+    "feedback 静默 16h34+（上次 6/10 17:41 escalation-reminder 归档）",
+    "KALIS 6/6 闭环 + www→apex 301 持续绿",
+    "hermes gateway + web-UI 常驻；无 active subagent / pending task",
+    "老板离线 1427min silent（无新请示）"
   ],
   "nextSteps": [
     "继续 5min silent pass",
-    "等老板回来验收 KALIS（建议不再打扰）",
-    "留意 michael 是否有新任务"
+    "留意 michael 早间任务 + 老板回归",
+    "今日 memory/2026-06-11.md 尚未建立，待首次实质性活动后建档"
   ],
-  "notes": "6/10 19:30 silent pass：michael+feedback 静默，KALIS 闭环稳定，老板离线 568m"
+  "notes": "6/11 10:15 silent pass：相对 10:10 无变化，KALIS 闭环稳定，5min 轮询继续"
 }
