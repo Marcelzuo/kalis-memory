@@ -25,3 +25,10 @@
 ## 通信协议更新（老板授权）
 
 以后 Michael ↔ Satan 任务派发走共享仓库 `shared/tasks/`。openclaw agent 仅用于 3 字 ping。
+
+---
+
+## 14:10 更新 — Michael 选择方案 A
+
+dist/ 文件已到位（14:05），Michael 执行 wrangler deploy。
+撒旦 token 耗尽，共享仓库异步通信，收到请回执。
