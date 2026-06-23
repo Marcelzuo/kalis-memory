@@ -1861,8 +1861,8 @@ var __lbImg__=document.getElementById('lightbox-img');
 var __lbThumbs__=document.getElementById('lightbox-thumbs');
 var __lbImages__=[],__lbIdx__=0;
 function openLightbox(main,dets){__lbImages__=[main].concat(dets);__lbIdx__=0;showLbImg();renderLbThumbs();__lb__.classList.add('active');document.body.style.overflow='hidden';}
-function showLbImg(){__lbImg__.src=__lbImages__[__lbIdx__];__lbImg__.onerror=function(){var t=this;if(!t.dataset.r){t.dataset.r=1;setTimeout(function(){t.src=t.src;},1000)}};renderLbThumbs();}
-function renderLbThumbs(){__lbThumbs__.innerHTML=__lbImages__.map(function(s,i){return '<div class="lightbox-thumb'+(i===__lbIdx__?' active':'')+'" data-idx="'+i+'"><img src="'+s+'" alt="" loading="lazy" onerror="var t=this;if(!t.dataset.r){t.dataset.r=1;setTimeout(function(){t.src=t.src;},1000)}">';}).join('');}
+function showLbImg(){__lbImg__.src=__lbImages__[__lbIdx__];__lbImg__.onerror=function(){var t=this,r=t.dataset;if(!r.rt){r.rt=1;var u=__lbImages__[__lbIdx__];setTimeout(function(){t.src=u.replace(/%23/g,'%23')+(u.indexOf('?')>-1?'&':'?')+'_r=1';},500)}};renderLbThumbs();}
+function renderLbThumbs(){__lbThumbs__.innerHTML=__lbImages__.map(function(s,i){return '<div class="lightbox-thumb'+(i===__lbIdx__?' active':'')+'" data-idx="'+i+'"><img src="'+s+'" alt="" decoding="async" onerror="var t=this,r=t.dataset;if(!r.rt){r.rt=1;setTimeout(function(){t.src=s.replace(/%23/g,\'%23\')+(s.indexOf(\'?\')>-1?\'&\':\'?\')+\'_r=1\';},500)}">';}).join('');}
 function closeLightbox(){__lb__.classList.remove('active');document.body.style.overflow='';}
 document.getElementById('lightbox-close').addEventListener('click',closeLightbox);
 document.getElementById('lightbox-prev').addEventListener('click',function(){__lbIdx__=(__lbIdx__-1+__lbImages__.length)%__lbImages__.length;showLbImg();});
