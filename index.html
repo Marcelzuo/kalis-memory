@@ -548,6 +548,57 @@ article.content-card:hover{border-color:var(--color-gold);transform:translateY(-
 .sm-cta{display:block;text-align:center;margin-top:2rem;font-family:'Montserrat',sans-serif;font-weight:400;font-size:0.9rem;color:#000;background:#C9A96E;padding:0.85rem 2rem;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:background 0.3s;max-width:280px;margin-left:auto;margin-right:auto}
 .sm-cta:hover{background:#D4B87A}
 @media(max-width:768px){.sm-grid{grid-template-columns:1fr}.sm-title{font-size:1.75rem}}
+
+/* ── Why-section modals ── */
+.factories-modal,.quality-modal,.freight-modal{position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 350ms cubic-bezier(0.4,0,0.2,1)}
+.factories-modal.active,.quality-modal.active,.freight-modal.active{opacity:1;pointer-events:auto}
+.factories-modal-backdrop,.quality-modal-backdrop,.freight-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.factories-modal-content,.quality-modal-content,.freight-modal-content{position:relative;z-index:2;width:100%;max-width:900px;max-height:90vh;overflow-y:auto;padding:3rem 2rem;transform:scale(0.95);transition:transform 350ms cubic-bezier(0.4,0,0.2,1);background:#FFFFFF}
+.factories-modal.active .factories-modal-content,
+.quality-modal.active .quality-modal-content,
+.freight-modal.active .freight-modal-content,
+.factories-modal.active .factories-modal-content-dark,
+.quality-modal.active .quality-modal-content-dark,
+.freight-modal.active .freight-modal-content-dark{transform:scale(1)}
+.factories-modal-close,.quality-modal-close,.freight-modal-close{position:absolute;top:1.5rem;right:1.5rem;z-index:3;background:none;border:none;color:#C9A96E;font-size:1.5rem;cursor:pointer;padding:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;line-height:1;transition:color 0.3s,opacity 0.3s}
+.factories-modal-close:hover,.quality-modal-close:hover,.freight-modal-close:hover{color:#D4B87A;opacity:0.9}
+
+/* factories-modal — dark theme */
+.factories-modal-content{background:#111;max-width:1100px}
+.factories-modal-content .factories-modal-close{color:#C9A96E}
+.factories-modal-content .factories-modal-close:hover{color:#D4B87A}
+.fm-title{font-family:'Montserrat',sans-serif;font-weight:300;font-size:2.5rem;color:#FFFFFF;text-align:center;margin-bottom:1rem;letter-spacing:0.04em}
+.fm-goldline,.qm-goldline,.frm-goldline{width:80px;height:1px;background:#C9A96E;margin:0 auto 1.25rem}
+.fm-subtitle{font-family:'Inter',sans-serif;font-weight:300;font-size:1rem;color:rgba(255,255,255,0.7);text-align:center;margin-bottom:3rem}
+.fm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:1rem}
+.fm-card{background:rgba(255,255,255,0.05);border-radius:4px;overflow:hidden;transition:transform 0.3s}
+.fm-card:hover{transform:translateY(-4px)}
+.fm-card-img{width:100%;aspect-ratio:16/9;overflow:hidden;background:rgba(255,255,255,0.08)}
+.fm-card-img img{width:100%;height:100%;object-fit:cover}
+.fm-card-body{padding:1rem 1.25rem}
+.fm-card-label{font-family:'Montserrat',sans-serif;font-weight:300;font-size:0.9rem;color:rgba(255,255,255,0.9);margin-bottom:0.35rem}
+.fm-card-count{font-family:'Inter',sans-serif;font-weight:300;font-size:0.85rem;color:#888888}
+.fm-footer-text{font-family:'Inter',sans-serif;font-weight:300;font-size:0.85rem;color:rgba(255,255,255,0.6);text-align:center;margin-top:2.5rem;line-height:1.6}
+@media(max-width:768px){.fm-grid{grid-template-columns:1fr}.fm-title{font-size:1.75rem}}
+
+/* quality-modal — light theme */
+.qm-title,.frm-title{font-family:'Montserrat',sans-serif;font-weight:300;font-size:2rem;color:#1A1A1A;text-align:center;margin-bottom:0.5rem}
+.qm-subtitle,.frm-subtitle{text-align:center;color:#666;margin-bottom:2.5rem;font-size:0.95rem;font-family:'Inter',sans-serif;font-weight:300}
+.qm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.qm-card{background:#FAF7F2;padding:2rem 1.5rem;border-radius:4px;text-align:center;border-top:2px solid #C9A96E}
+.qm-card-icon{font-size:2.5rem;margin-bottom:1rem}
+.qm-card-title{font-weight:600;color:#1A1A1A;margin-bottom:0.75rem;font-size:1.05rem;font-family:'Montserrat',sans-serif}
+.qm-card-text{color:#666;font-size:0.9rem;line-height:1.6;font-family:'Inter',sans-serif;font-weight:300}
+@media(max-width:768px){.qm-grid{grid-template-columns:1fr}}
+
+/* freight-modal — light theme */
+.frm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem}
+.frm-card{background:#FAF7F2;padding:2rem 1.5rem;border-radius:4px;text-align:center;border-top:2px solid #C9A96E}
+.frm-card-port{font-weight:600;color:#1A1A1A;font-size:1.1rem;margin-bottom:0.75rem;font-family:'Montserrat',sans-serif}
+.frm-card-rate{font-family:'Montserrat',sans-serif;font-weight:300;font-size:2rem;color:#C9A96E;margin-bottom:0.5rem}
+.frm-card-unit{color:#666;font-size:0.85rem;font-family:'Inter',sans-serif;font-weight:300}
+.frm-note{text-align:center;color:#888;font-size:0.85rem;margin-top:1.5rem;font-style:italic;font-family:'Inter',sans-serif;font-weight:300}
+@media(max-width:768px){.frm-grid{grid-template-columns:1fr}}
 </style>
   <!-- Google Analytics GA4 + Consent Mode v2 (cookieless tracking by default; full tracking after Accept) -->
   <script>
@@ -797,9 +848,9 @@ article.content-card:hover{border-color:var(--color-gold);transform:translateY(-
   </div>
   <div class="container">
     <div class="why-grid">
-      <div class="why-item"><a href="factories.html" style="text-decoration:none;color:inherit"><div class="why-icon">🏭</div><h3 data-i18n="why_card1_title">100+ Factories</h3><p data-i18n="why_card1_text">Pre-vetted manufacturers across China. You get choices, not commitments.</p></a></div>
-      <div class="why-item"><a href="quality.html" style="text-decoration:none;color:inherit"><div class="why-icon">🔍</div><h3 data-i18n="why_card2_title">Quality Inspected</h3><p data-i18n="why_card2_text">Photos and videos before you pay the balance. No surprises.</p></a></div>
-      <div class="why-item"><a href="freight.html" style="text-decoration:none;color:inherit"><div class="why-icon">📦</div><h3 data-i18n="why_card3_title">Best Freight Rates</h3><p data-i18n="why_card3_text">Live rates from top carriers. We pass the savings to you.</p></a></div>
+      <div class="why-item" id="why-item-factories" style="cursor:pointer"><div class="why-icon">🏭</div><h3 data-i18n="why_card1_title">100+ Factories</h3><p data-i18n="why_card1_text">Pre-vetted manufacturers across China. You get choices, not commitments.</p></div>
+      <div class="why-item" id="why-item-quality" style="cursor:pointer"><div class="why-icon">🔍</div><h3 data-i18n="why_card2_title">Quality Inspected</h3><p data-i18n="why_card2_text">Photos and videos before you pay the balance. No surprises.</p></div>
+      <div class="why-item" id="why-item-freight" style="cursor:pointer"><div class="why-icon">📦</div><h3 data-i18n="why_card3_title">Best Freight Rates</h3><p data-i18n="why_card3_text">Live rates from top carriers. We pass the savings to you.</p></div>
     </div>
   </div>
 </section>
@@ -970,6 +1021,96 @@ article.content-card:hover{border-color:var(--color-gold);transform:translateY(-
   <p class="footer-family" data-i18n="footer_family">A KALIS Group Brand · Furniture & Apparel</p>
 <span data-i18n="footer_privacy"><a href="/privacy.html">Privacy Policy</a></span>
 </footer>
+
+<!-- Why-Section Modals -->
+<div class="factories-modal" id="factories-modal" role="dialog" aria-label="New Partner Factories">
+  <div class="factories-modal-backdrop"></div>
+  <div class="factories-modal-content">
+    <button class="factories-modal-close" id="factories-modal-close" aria-label="Close">&times;</button>
+    <div class="fm-title">New Partner Factories</div>
+    <div class="fm-goldline"></div>
+    <div class="fm-subtitle">Expanding our supply network with verified workshops</div>
+    <div class="fm-grid">
+      <div class="fm-card">
+        <div class="fm-card-img"><img loading="lazy" src="assets/factories-modal/bed.webp" alt="Bed Workshop"></div>
+        <div class="fm-card-body">
+          <div class="fm-card-label">Bed Workshop · Guangdong</div>
+          <div class="fm-card-count">28 products</div>
+        </div>
+      </div>
+      <div class="fm-card">
+        <div class="fm-card-img"><img loading="lazy" src="assets/factories-modal/sofa.webp" alt="Sofa Workshop"></div>
+        <div class="fm-card-body">
+          <div class="fm-card-label">Sofa Workshop · Zhejiang</div>
+          <div class="fm-card-count">42 products</div>
+        </div>
+      </div>
+      <div class="fm-card">
+        <div class="fm-card-img"><img loading="lazy" src="assets/factories-modal/table.webp" alt="Table Workshop"></div>
+        <div class="fm-card-body">
+          <div class="fm-card-label">Table Workshop · Fujian</div>
+          <div class="fm-card-count">18 products</div>
+        </div>
+      </div>
+    </div>
+    <div class="fm-footer-text">With 100+ vetted factories across China, you get choices — not commitments. Every partner is pre-screened for quality, capacity, and export compliance.</div>
+  </div>
+</div>
+
+<div class="quality-modal" id="quality-modal" role="dialog" aria-label="Quality Inspection">
+  <div class="quality-modal-backdrop"></div>
+  <div class="quality-modal-content">
+    <button class="quality-modal-close" id="quality-modal-close" aria-label="Close">&times;</button>
+    <div class="qm-title">Quality Inspection</div>
+    <div class="qm-goldline"></div>
+    <div class="qm-subtitle">Photos and videos before balance payment. Every piece verified.</div>
+    <div class="qm-grid">
+      <div class="qm-card">
+        <div class="qm-card-icon">🔍</div>
+        <div class="qm-card-title">Pre-Production Sample</div>
+        <div class="qm-card-text">We share photos and a short video of the first piece before mass production starts.</div>
+      </div>
+      <div class="qm-card">
+        <div class="qm-card-icon">📦</div>
+        <div class="qm-card-title">Mid-Production Check</div>
+        <div class="qm-card-text">At roughly 30% completion, we inspect again. This catches most issues before they spread.</div>
+      </div>
+      <div class="qm-card">
+        <div class="qm-card-icon">📷</div>
+        <div class="qm-card-title">Pre-Shipment Report</div>
+        <div class="qm-card-text">Before balance payment, you receive a full photo and video report. You decide.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="freight-modal" id="freight-modal" role="dialog" aria-label="Freight Rates">
+  <div class="freight-modal-backdrop"></div>
+  <div class="freight-modal-content">
+    <button class="freight-modal-close" id="freight-modal-close" aria-label="Close">&times;</button>
+    <div class="frm-title">Freight Rates</div>
+    <div class="frm-goldline"></div>
+    <div class="frm-subtitle">Live rates from top carriers to European ports</div>
+    <div class="frm-grid">
+      <div class="frm-card">
+        <div class="frm-card-port">Rotterdam</div>
+        <div class="frm-card-rate">€2,150</div>
+        <div class="frm-card-unit">per 40HQ · sea</div>
+      </div>
+      <div class="frm-card">
+        <div class="frm-card-port">Hamburg</div>
+        <div class="frm-card-rate">€2,280</div>
+        <div class="frm-card-unit">per 40HQ · sea</div>
+      </div>
+      <div class="frm-card">
+        <div class="frm-card-port">Barcelona</div>
+        <div class="frm-card-rate">€2,450</div>
+        <div class="frm-card-unit">per 40HQ · sea</div>
+      </div>
+    </div>
+    <div class="frm-note">Rates are weekly estimates based on current carrier data. Final quote depends on volume, route, and timing.</div>
+  </div>
+</div>
 
 <!-- GDPR Cookie Banner -->
 <div class="cookie-banner hidden" id="cookie-banner" role="dialog" aria-label="Cookie notice">
@@ -1949,6 +2090,52 @@ setLang(sl||'en');
       ':wght@200;300;400;500&display=swap';
     document.head.appendChild(link);
   }
+})();
+</script>
+<script>
+// Why-section modal triggers
+(function(){
+  function openModal(id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.add('active');
+  }
+  function closeModal(id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  }
+  function wire(btnId, modalId) {
+    var btn = document.getElementById(btnId);
+    if (btn) btn.addEventListener('click', function() { openModal(modalId); });
+  }
+  wire('why-item-factories', 'factories-modal');
+  wire('why-item-quality', 'quality-modal');
+  wire('why-item-freight', 'freight-modal');
+  // close on × button
+  ['factories-modal-close', 'quality-modal-close', 'freight-modal-close'].forEach(function(id){
+    var btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', function() {
+      btn.closest('.factories-modal, .quality-modal, .freight-modal').classList.remove('active');
+    });
+  });
+  // close on backdrop click
+  ['factories-modal', 'quality-modal', 'freight-modal'].forEach(function(id){
+    var modal = document.getElementById(id);
+    if (modal) {
+      var backdrop = modal.querySelector('.factories-modal-backdrop, .quality-modal-backdrop, .freight-modal-backdrop');
+      if (backdrop) backdrop.addEventListener('click', function() {
+        modal.classList.remove('active');
+      });
+    }
+  });
+  // close on ESC
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      ['factories-modal', 'quality-modal', 'freight-modal'].forEach(function(id){
+        var el = document.getElementById(id);
+        if (el) el.classList.remove('active');
+      });
+    }
+  });
 })();
 </script>
 </body>
