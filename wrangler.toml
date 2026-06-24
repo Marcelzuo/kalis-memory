@@ -1,0 +1,8 @@
+# Kalistorik Cloudflare Pages 配置
+# nodejs_compat 是 Functions 使用 nodemailer 的必要条件
+compatibility_date = "2025-06-24"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+compatibility_date = "2025-06-24"
+compatibility_flags = ["nodejs_compat"]
