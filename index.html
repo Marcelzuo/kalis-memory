@@ -127,7 +127,7 @@ img{display:block;max-width:100%}
 @media(max-width:768px){.section{padding:4rem 1.25rem}.section-title{font-size:1.75rem}}
 
 /* ── Why Split ── */
-.why-split{display:grid;grid-template-columns:3fr 2fr;gap:0;min-height:60vh;background:#000}
+.why-split{display:grid;grid-template-columns:3fr 2fr;gap:0;aspect-ratio:16/9;height:auto;background:#000}
 .why-split__img{position:relative;background-size:cover;background-position:center}
 .why-split__img::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#C9A96E}
 .why-split__accent{position:absolute;left:0;top:15%;bottom:15%;width:1px;background:#C9A96E}
@@ -435,7 +435,7 @@ article
     <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#hero" data-nav="nav_home">Home</a></li>
-      <li><a href="#ads" data-nav="nav_picks">Picks</a></li>
+      <li><a href="#our-picks" data-nav="nav_picks">Picks</a></li>
       <li><a href="#products" data-nav="nav_products">Products</a></li>
       <li><a href="#why" data-nav="nav_why">Why Us</a></li>
       <li><a href="#how" data-nav="nav_how">How It Works</a></li>
@@ -535,7 +535,7 @@ article
 <!-- Why KALIS TORIK — Split Layout -->
 <section id="why">
   <div class="why-split">
-    <div class="why-split__img" style="background-image:url(images/factories/factory-hero.jpg)">
+    <div class="why-split__img" style="background-image:url(images/picks/hook1.jpg)">
       <div class="why-split__accent"></div>
     </div>
     <div class="why-split__side">
