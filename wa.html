@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact KALIS TORIK — WhatsApp</title>
+<meta name="robots" content="noindex">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 560px;
+    width: 100%;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(36px, 5vw, 48px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+  .line {
+    width: 60px;
+    height: 1px;
+    background: #C9A96E;
+    margin: 24px 0;
+    border: 0;
+  }
+  .sub {
+    margin: 0;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0.02em;
+  }
+  .fallback {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #888888;
+  }
+  .fallback a {
+    color: #C9A96E;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.4);
+    padding-bottom: 1px;
+    transition: border-color 200ms ease, color 200ms ease;
+  }
+  .fallback a:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Opening WhatsApp&hellip;</h1>
+    <hr class="line" aria-hidden="true">
+    <p class="sub">KALIS TORIK &middot; Sourcing partner since 2005</p>
+    <p class="fallback">
+      If nothing happens, <a href="https://wa.me/8613602222361?text=Hi%2C%20I%20came%20from%20your%20website.%20I%27d%20like%20to%20learn%20more." onclick="if(typeof gtag==='function'){gtag('event','wa_redirect',{'event_category':'contact','event_label':'shortlink','transport_type':'beacon'});}">Open WhatsApp</a>.
+    </p>
+  </main>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRPEYWWLM1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YRPEYWWLM1', { 'send_page_view': false });
+
+    // Fire redirect event then jump after 300ms
+    if (typeof gtag === 'function') {
+      gtag('event', 'wa_redirect', {
+        'event_category': 'contact',
+        'event_label': 'shortlink',
+        'transport_type': 'beacon'
+      });
+    }
+    setTimeout(function () {
+      window.location.href = 'https://wa.me/8613602222361?text=Hi%2C%20I%20came%20from%20your%20website.%20I%27d%20like%20to%20learn%20more.';
+    }, 300);
+  </script>
+</body>
+</html>
