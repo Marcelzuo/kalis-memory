@@ -126,19 +126,21 @@ img{display:block;max-width:100%}
 .section-text{font-size:1.05rem;line-height:1.8;color:var(--color-ash);max-width:720px;margin:0 auto}
 @media(max-width:768px){.section{padding:4rem 1.25rem}.section-title{font-size:1.75rem}}
 
-/* ── Editorial Grid (Why Section) ── */
-.why-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border-top:1px solid #C9A96E;border-bottom:1px solid #C9A96E;margin:3rem 0}
-.why-stats>div{text-align:center;padding:2rem 1rem;border-right:1px solid rgba(201,169,110,0.3)}
-.why-stats>div:last-child{border-right:none}
-.why-stats__num{font-family:'Montserrat',sans-serif;font-weight:200;font-size:clamp(2rem,3.5vw,3rem);color:#FFF;display:block}
-.why-stats__label{font-family:'Inter',sans-serif;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.15em;color:#C9A96E;display:block;margin-top:0.3rem}
-.why-hero{width:100%;height:50vh;background-size:cover;background-position:center;position:relative;overflow:hidden}
-.why-hero__mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.10),rgba(0,0,0,0.25))}
-.why-hero p{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:200;font-size:clamp(1.2rem,2.5vw,2rem);color:#FFF;text-align:center;letter-spacing:0.06em;padding:2rem;margin:0}
-.why-cta{text-align:center;margin-top:2rem}
-.why-cta a{display:inline-block;border:1px solid #C9A96E;padding:0.75rem 2rem;font-family:'Montserrat',sans-serif;text-transform:uppercase;font-size:0.85rem;color:#C9A96E;text-decoration:none;transition:all 0.3s}
-.why-cta a:hover{background:#C9A96E;color:#000}
-@media(max-width:768px){.why-stats{grid-template-columns:repeat(2,1fr)}.why-stats>div:nth-child(2){border-right:none}.why-hero{height:40vh}}
+/* ── Why Split ── */
+.why-split{display:grid;grid-template-columns:3fr 2fr;gap:0;min-height:60vh;background:#000}
+.why-split__img{position:relative;background-size:cover;background-position:center}
+.why-split__img::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#C9A96E}
+.why-split__accent{position:absolute;left:0;top:15%;bottom:15%;width:1px;background:#C9A96E}
+.why-split__side{padding:3rem 2rem;display:flex;flex-direction:column;justify-content:center}
+.why-split__title{font-family:'Montserrat',sans-serif;font-weight:300;font-size:clamp(1.5rem,3vw,2rem);color:#FFF;letter-spacing:0.1em;text-transform:uppercase}
+.why-split__sub{font-family:'Inter',sans-serif;font-weight:300;font-style:italic;font-size:0.95rem;color:#888;margin:0.75rem 0 2rem;line-height:1.6}
+.why-split__stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.why-split__stats>div{border-left:2px solid #C9A96E;padding-left:1rem}
+.why-split__stats strong{font-family:'Montserrat',sans-serif;font-weight:200;font-size:clamp(1.6rem,2.5vw,2.2rem);color:#FFF;display:block}
+.why-split__stats span{font-family:'Inter',sans-serif;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.15em;color:#C9A96E;margin-top:0.2rem}
+.why-split__cta{margin-top:2.5rem;display:inline-block;border:1px solid #C9A96E;padding:0.7rem 2rem;font-family:'Montserrat',sans-serif;text-transform:uppercase;font-size:0.8rem;color:#C9A96E;text-decoration:none}
+.why-split__cta:hover{background:#C9A96E;color:#000}
+@media(max-width:768px){.why-split{grid-template-columns:1fr}.why-split__img{height:40vh}.why-split__side{padding:2rem 1.5rem}}
 
 /* ── How It Works ── */
 .how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3rem}
@@ -530,28 +532,22 @@ article
     <div class="products-grid hidden" id="products-chairs"></div>
   </div>
 </section>
-<!-- Why KALIS TORIK — Evidence Deck -->
-<section class="section" id="why">
-  <div class="container" style="text-align:center">
-    <h2 class="section-title" data-i18n="why_title">Why KALIS TORIK</h2>
-    <p class="section-text" data-i18n="why_text">We don't make furniture. We make sourcing safe.</p>
-  </div>
-  <div class="container">
-    <!-- Stats Bar -->
-    <div class="why-stats">
-      <div><span class="why-stats__num">100+</span><span class="why-stats__label" data-i18n="stat_factories">Factories</span></div>
-      <div><span class="why-stats__num">20+</span><span class="why-stats__label" data-i18n="stat_years">Years</span></div>
-      <div><span class="why-stats__num">50+</span><span class="why-stats__label" data-i18n="stat_clients">Clients</span></div>
-      <div><span class="why-stats__num">Live</span><span class="why-stats__label" data-i18n="stat_rates">Rates</span></div>
+<!-- Why KALIS TORIK — Split Layout -->
+<section id="why">
+  <div class="why-split">
+    <div class="why-split__img" style="background-image:url(images/factories/factory-hero.jpg)">
+      <div class="why-split__accent"></div>
     </div>
-    <!-- Factory Hero -->
-    <div class="why-hero" style="background-image:url(images/factories/sofa-workshop.jpg)">
-      <div class="why-hero__mask"></div>
-      <p data-i18n="proof_text">We do not make furniture. We make it safe to buy.</p>
-    </div>
-    <!-- CTA -->
-    <div class="why-cta">
-      <a href="/wa.html" data-i18n="cta_text">Start Sourcing →</a>
+    <div class="why-split__side">
+      <h2 class="why-split__title">Why KALIS TORIK</h2>
+      <p class="why-split__sub" data-i18n="proof_text">We do not make furniture. We make it safe to buy.</p>
+      <div class="why-split__stats">
+        <div><strong>100+</strong> <span data-i18n="stat_factories_label">Factories</span></div>
+        <div><strong>20+</strong> <span data-i18n="stat_years_label">Years</span></div>
+        <div><strong>50+</strong> <span data-i18n="stat_clients_label">EU Clients</span></div>
+        <div><strong>Live</strong> <span data-i18n="stat_rates_label">Rates</span></div>
+      </div>
+      <a href="/wa.html" class="why-split__cta" data-i18n="cta_text">Start Sourcing →</a>
     </div>
   </div>
 </section>
