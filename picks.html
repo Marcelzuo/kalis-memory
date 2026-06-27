@@ -7,12 +7,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="canonical" href="https://kalistorik.com/picks.html" />
+  <link rel="alternate" hreflang="en" href="https://kalistorik.com/picks.html?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://kalistorik.com/picks.html?lang=fr" />
+  <link rel="alternate" hreflang="de" href="https://kalistorik.com/picks.html?lang=de" />
+  <link rel="alternate" hreflang="it" href="https://kalistorik.com/picks.html?lang=it" />
+  <link rel="alternate" hreflang="es" href="https://kalistorik.com/picks.html?lang=es" />
+  <link rel="alternate" hreflang="pt" href="https://kalistorik.com/picks.html?lang=pt" />
+  <link rel="alternate" hreflang="x-default" href="https://kalistorik.com/picks.html" />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="KALIS TORIK Picks — Furniture Sourcing Deals & Market Alerts" />
-  <meta property="og:description" content="Curated sourcing offers, freight alerts, and real stories from 20 years on the ground." />
+  <meta property="og:description" content="Real sourcing stories, freight alerts, and factory picks. No fluff." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kalistorik.com/picks.html" />
   <meta property="og:image" content="https://kalistorik.com/favicon-512.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_PT" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="KALIS TORIK Picks" />
   <meta name="twitter:description" content="Real sourcing stories, market alerts, and factory picks. No fluff." />
@@ -43,7 +56,7 @@
   }
   </script>
 <title>KALIS TORIK Picks — Furniture Sourcing Deals & Market Alerts</title>
-<meta name="description" content="The things we say out loud that most sourcing agents keep behind closed doors." />
+<meta name="description" content="Real stories from the factory floor. The kind most agents do not share." />
 <style>
   /* ---------- Reset & base ---------- */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -97,6 +110,13 @@
   }
   .nav a { opacity: 0.85; transition: opacity 200ms var(--ease); }
   .nav a:hover { opacity: 1; }
+		.lang-switch { position: relative; margin-left: 0.6rem; }
+		.lang-btn { background: none; border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.8); padding: 0.4rem 0.8rem; font-size: 0.75rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.04em; border-radius: 2px; transition: all 0.3s; mix-blend-mode: normal; }
+		.lang-btn:hover { border-color: var(--gold); color: var(--gold); }
+		.lang-dropdown { position: absolute; top: 100%; right: 0; margin-top: 0.5rem; background: #000; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; list-style: none; min-width: 140px; display: none; overflow: hidden; z-index: 100; mix-blend-mode: normal; }
+		.lang-dropdown.show { display: block; }
+		.lang-dropdown li button { width: 100%; padding: 0.6rem 1rem; background: none; border: none; color: rgba(255,255,255,0.7); font-size: 0.8rem; cursor: pointer; text-align: left; transition: all 0.2s; }
+		.lang-dropdown li button:hover, .lang-dropdown li button.active { background: var(--gold); color: #000; }
 
   /* ---------- Carousel stage ---------- */
   .stage {
@@ -543,6 +563,186 @@
     .arrow, .nav-arrow, [data-arrow] { display: none !important; }
   }
 </style>
+<script>
+var __LANGS__ = {
+  "en": {
+    "nav_how": "how it works",
+    "nav_factories": "factories",
+    "nav_contact": "contact",
+    "picks_first_two": "The first two orders went perfectly.",
+    "picks_third_didnt": "The third one didn't.",
+    "picks_what_next": "What happened next",
+    "picks_note_buyers": "A note for first-time buyers",
+    "picks_first_order_title": "Your first order doesn't need to be perfect. It needs to be real.",
+    "picks_what_looks_like": "What a first order actually looks like",
+    "story1_hook1": "More factories refused than most agents ever visit.",
+    "story1_body": "KALIS TORIK works for studios, retailers, and brands who choose quality over volume. Most of the week: walking away from the wrong ones.",
+    "story1_stats": "Factories in the network · new partners added every year",
+    "story1_ps": "PS. One factory offered 40% commission. The call was never returned.",
+    "story1_intro": "A buyer in Porto reached out. Not after the first order — after the third. When cutting corners started, the pattern was clear.",
+    "story2_body": "30-piece trials for Berlin studios. 200-bed runs for Madrid retailers. Every size has a path. Start where you are. The rest gets figured out, step by step.",
+    "hook1_body": "A small list, kept that way on purpose. More than two decades, and factory floors are still walked in person.",
+    "hook1_cta": "Ask what gets refused today",
+    "hook2_body": "Some buyers started with just 30 pieces. Photos before payment. That part never changes.",
+    "hook3_title": "More than 20 years on the ground. Full service, start to finish.",
+    "hook3_body": "From first contact to your port. One dedicated contact, all the way.",
+    "picks_title": "KALIS TORIK Picks — Furniture Sourcing Deals & Market Alerts",
+    "picks_desc": "Real stories from the factory floor. The kind most agents do not share."
+  },
+  "fr": {
+    "nav_how": "Comment ça marche",
+    "nav_factories": "Usines",
+    "nav_contact": "Contact",
+    "picks_first_two": "Les deux premières commandes se sont bien passées.",
+    "picks_third_didnt": "La troisième ne s'est pas bien passée.",
+    "picks_what_next": "Ce qui s'est passé ensuite",
+    "picks_note_buyers": "Une note pour les premiers acheteurs",
+    "picks_first_order_title": "Votre première commande n'a pas besoin d'être parfaite. Elle doit être réelle.",
+    "picks_what_looks_like": "À quoi ressemble vraiment une première commande",
+    "story1_hook1": "Plus d'usines refusées que la plupart des agents n'en visitent jamais.",
+    "story1_body": "KALIS TORIK travaille pour des studios, des détaillants et des marques qui choisissent la qualité plutôt que le volume. La plupart de la semaine : s'éloigner des mauvaises.",
+    "story1_stats": "Usines dans le réseau · nouveaux partenaires ajoutés chaque année",
+    "story1_ps": "P.S. Une usine a offert 40% de commission. L'appel n'a jamais été retourné.",
+    "story1_intro": "Un acheteur à Porto a contacté. Pas après la première commande — après la troisième. Quand les raccourcis ont commencé, le schéma était clair.",
+    "story2_body": "Essais de 30 pièces pour les studios berlinois. Lots de 200 lits pour les détaillants madrilènes. Chaque taille a un chemin. Commencez où vous êtes. Le reste se règle, pas à pas.",
+    "hook1_body": "Une petite liste, gardée petite exprès. Plus de deux décennies, et les ateliers sont toujours visités en personne.",
+    "hook1_cta": "Demandez ce qui est refusé aujourd'hui",
+    "hook2_body": "Certains acheteurs ont commencé avec seulement 30 pièces. Photos avant paiement. Cette partie ne change jamais.",
+    "hook3_title": "Plus de 20 ans sur le terrain. Service complet, du début à la fin.",
+    "hook3_body": "Du premier contact à votre port. Un seul interlocuteur dédié, tout du long.",
+    "picks_title": "KALIS TORIK Sélection — Offres de sourcing mobilier & Alertes marché",
+    "picks_desc": "Histoires vraies de l'atelier. Celles que la plupart des agents ne partagent pas."
+  },
+  "de": {
+    "nav_how": "wie es funktioniert",
+    "nav_factories": "Fabriken",
+    "nav_contact": "Kontakt",
+    "picks_first_two": "Die ersten zwei Bestellungen liefen perfekt.",
+    "picks_third_didnt": "Die dritte nicht.",
+    "picks_what_next": "Was dann passierte",
+    "picks_note_buyers": "Ein Hinweis für Erstkäufer",
+    "picks_first_order_title": "Deine erste Bestellung muss nicht perfekt sein. Sie muss echt sein.",
+    "picks_what_looks_like": "Wie eine erste Bestellung wirklich aussieht",
+    "story1_hook1": "Mehr Fabriken abgelehnt, als die meisten Agenten je besuchen.",
+    "story1_body": "KALIS TORIK arbeitet für Studios, Einzelhändler und Marken, die Qualität über Menge wählen. Die meiste Woche: von den Falschen weggehen.",
+    "story1_stats": "Fabriken im Netzwerk · jedes Jahr neue Partner dazu.",
+    "story1_ps": "PS. Eine Fabrik bot 40 % Provision. Der Anruf wurde nie erwidert.",
+    "story1_intro": "Ein Käufer in Porto meldete sich. Nicht nach der ersten Bestellung – nach der dritten. Als Abstriche gemacht wurden, war das Muster klar.",
+    "story2_body": "30-Stück-Tests für Berliner Studios. 200-Bett-Serien für Madrider Einzelhändler. Jede Größe hat einen Weg. Fangen Sie an, wo Sie sind. Der Rest ergibt sich Schritt für Schritt.",
+    "hook1_body": "Eine kleine Liste, absichtlich klein gehalten. Mehr als zwei Jahrzehnte, und Fabrikhallen werden immer noch persönlich besucht.",
+    "hook1_cta": "Fragen Sie, was heute abgelehnt wird.",
+    "hook2_body": "Manche Käufer fingen mit nur 30 Stück an. Fotos vor Bezahlung. Das ändert sich nie.",
+    "hook3_title": "Mehr als 20 Jahre vor Ort. Kompletter Service, von Anfang bis Ende.",
+    "hook3_body": "Vom ersten Kontakt bis zu Ihrem Hafen. Ein fester Ansprechpartner, die ganze Zeit.",
+    "picks_title": "KALIS TORIK Auswahl — Möbel-Sourcing-Angebote & Markt-Updates",
+    "picks_desc": "Wahre Geschichten aus der Fabrikhalle. Die Art, die die meisten Agenten nicht teilen."
+  },
+  "it": {
+    "nav_how": "come funziona",
+    "nav_factories": "fabbriche",
+    "nav_contact": "contatti",
+    "picks_first_two": "I primi due ordini sono andati perfettamente.",
+    "picks_third_didnt": "Il terzo no.",
+    "picks_what_next": "Cosa è successo dopo?",
+    "picks_note_buyers": "Una nota per chi compra per la prima volta.",
+    "picks_first_order_title": "Il tuo primo ordine non deve essere perfetto. Deve essere reale.",
+    "picks_what_looks_like": "Com'è veramente un primo ordine.",
+    "story1_hook1": "Più fabbriche rifiutate di quante la maggior parte degli agenti ne visiti.",
+    "story1_body": "KALIS TORIK lavora per studi, rivenditori e marchi che scelgono la qualità rispetto al volume. La maggior parte della settimana: allontanarsi da quelli sbagliati.",
+    "story1_stats": "Fabbriche nella rete · nuovi partner aggiunti ogni anno",
+    "story1_ps": "PS. Una fabbrica ha offerto il 40% di commissione. La chiamata non è mai stata restituita.",
+    "story1_intro": "Un acquirente a Porto si è fatto sentire. Non dopo il primo ordine — dopo il terzo. Quando hanno iniziato a tagliare gli angoli, lo schema era chiaro.",
+    "story2_body": "Prove da 30 pezzi per studi di Berlino. Lotti da 200 letti per rivenditori di Madrid. Ogni dimensione ha un percorso. Inizia da dove sei. Il resto si risolve, passo dopo passo.",
+    "hook1_body": "Una lista piccola, tenuta così apposta. Più di due decenni, e si cammina ancora di persona sui pavimenti delle fabbriche.",
+    "hook1_cta": "Chiedi cosa viene rifiutato oggi",
+    "hook2_body": "Alcuni acquirenti hanno iniziato con solo 30 pezzi. Foto prima del pagamento. Quella parte non cambia mai.",
+    "hook3_title": "Più di 20 anni sul campo. Servizio completo, dall'inizio alla fine.",
+    "hook3_body": "Dal primo contatto al tuo porto. Un contatto dedicato, fino in fondo.",
+    "picks_title": "KALIS TORIK Selezione — Offerte di sourcing arredamento & Avvisi di mercato",
+    "picks_desc": "Storie vere dalla fabbrica. Il tipo che la maggior parte degli agenti non condivide."
+  },
+  "es": {
+    "nav_how": "cómo funciona",
+    "nav_factories": "fábricas",
+    "nav_contact": "contacto",
+    "picks_first_two": "Los primeros dos pedidos salieron perfectos.",
+    "picks_third_didnt": "El tercero no.",
+    "picks_what_next": "Qué pasó después",
+    "picks_note_buyers": "Una nota para compradores primerizos.",
+    "picks_first_order_title": "Tu primer pedido no tiene que ser perfecto. Tiene que ser real.",
+    "picks_what_looks_like": "Cómo es un primer pedido de verdad.",
+    "story1_hook1": "Más fábricas rechazadas de las que la mayoría de los agentes visitan.",
+    "story1_body": "KALIS TORIK trabaja para estudios, minoristas y marcas que eligen calidad sobre cantidad. La mayor parte de la semana: alejándose de las incorrectas.",
+    "story1_stats": "Fábricas en la red · nuevos socios añadidos cada año",
+    "story1_ps": "PD. Una fábrica ofreció 40% de comisión. La llamada nunca fue devuelta.",
+    "story1_intro": "Un comprador en Oporto contactó. No después del primer pedido, después del tercero. Cuando empezaron a tomar atajos, el patrón fue claro.",
+    "story2_body": "Pruebas de 30 piezas para estudios de Berlín. Pedidos de 200 camas para minoristas de Madrid. Cada tamaño tiene un camino. Empieza donde estás. El resto se resuelve, paso a paso.",
+    "hook1_body": "Una lista pequeña, mantenida así a propósito. Más de dos décadas, y todavía se recorren las fábricas en persona.",
+    "hook1_cta": "Pregunta qué se rechaza hoy",
+    "hook2_body": "Algunos compradores empezaron con solo 30 piezas. Fotos antes del pago. Esa parte nunca cambia.",
+    "hook3_title": "Más de 20 años sobre el terreno. Servicio completo, de principio a fin.",
+    "hook3_body": "Desde el primer contacto hasta tu puerto. Un contacto dedicado, todo el camino.",
+    "picks_title": "KALIS TORIK Selección — Ofertas de sourcing de muebles & Alertas de mercado",
+    "picks_desc": "Historias reales desde la fábrica. Del tipo que la mayoría de los agentes no comparten."
+  },
+  "pt": {
+    "nav_how": "como funciona",
+    "nav_factories": "fábricas",
+    "nav_contact": "contato",
+    "picks_first_two": "As duas primeiras encomendas correram perfeitamente.",
+    "picks_third_didnt": "A terceira não.",
+    "picks_what_next": "O que aconteceu depois",
+    "picks_note_buyers": "Um aviso para quem compra pela primeira vez",
+    "picks_first_order_title": "A sua primeira encomenda não precisa ser perfeita. Precisa ser real.",
+    "picks_what_looks_like": "Como realmente é uma primeira encomenda",
+    "story1_hook1": "Mais fábricas recusadas do que a maioria dos agentes já visitou.",
+    "story1_body": "A KALIS TORIK trabalha com estúdios, lojas e marcas que escolhem qualidade em vez de quantidade. Na maior parte da semana: afastando-se das erradas.",
+    "story1_stats": "Fábricas na rede · novos parceiros adicionados todo ano",
+    "story1_ps": "PS. Uma fábrica ofereceu 40% de comissão. A ligação nunca foi retornada.",
+    "story1_intro": "Um comprador no Porto entrou em contato. Não depois do primeiro pedido — depois do terceiro. Quando os cortes começaram, o padrão ficou claro.",
+    "story2_body": "Testes de 30 peças para estúdios de Berlim. Lotes de 200 camas para lojas de Madri. Cada tamanho tem um caminho. Comece de onde você está. O resto se resolve, passo a passo.",
+    "hook1_body": "Uma lista pequena, mantida assim de propósito. Mais de duas décadas, e ainda visitamos as fábricas pessoalmente.",
+    "hook1_cta": "Pergunte o que é recusado hoje",
+    "hook2_body": "Alguns compradores começaram com apenas 30 peças. Fotos antes do pagamento. Essa parte nunca muda.",
+    "hook3_title": "Mais de 20 anos no terreno. Serviço completo, do início ao fim.",
+    "hook3_body": "Do primeiro contato ao seu porto. Um único contato dedicado, o tempo todo.",
+    "picks_title": "KALIS TORIK Seleção — Ofertas de sourcing de mobiliário & Alertas de mercado",
+    "picks_desc": "Histórias reais do chão de fábrica. Do tipo que a maioria dos agentes não partilha."
+  }
+};
+var __curLang__ = "en";
+function setLang(lang) {
+  var t = __LANGS__[lang] || __LANGS__["en"];
+  __curLang__ = lang;
+  __LANGS__._lang = lang;
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-i18n]").forEach(function(el) {
+    var k = el.getAttribute("data-i18n");
+    if (t[k]) el.innerHTML = t[k];
+  });
+
+  document.querySelectorAll("[data-nav]").forEach(function(a) {
+    var k = a.getAttribute("data-nav");
+    if (t[k]) a.textContent = t[k];
+  });
+
+  document.querySelectorAll("#lang-dropdown button").forEach(function(b) {
+    b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+  });
+
+  var labels = {en:"English",fr:"Français",de:"Deutsch",it:"Italiano",es:"Español",pt:"Português"};
+  var btn = document.getElementById("lang-btn");
+  if (btn) btn.textContent = labels[lang] + " \u25be";
+
+  try { localStorage.setItem("kalis-lang", lang); } catch(e) {}
+
+  document.title = t.picks_title || __LANGS__.en.picks_title;
+  var metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute('content', t.picks_desc || __LANGS__.en.picks_desc);
+}
+</script>
+
 </head>
 <body>
 
@@ -550,9 +750,20 @@
 <header class="brandbar" role="banner">
   <div class="brand">Kalis<span>·</span>Sourcing</div>
   <nav class="nav" aria-label="Primary">
-    <a href="https://kalistorik.com/#how">how it works</a>
-    <a href="https://kalistorik.com/#factories">factories</a>
-    <a href="https://kalistorik.com/#contact">contact</a>
+    <a href="https://kalistorik.com/#how" data-nav="nav_how">how it works</a>
+    <a href="https://kalistorik.com/#factories" data-nav="nav_factories">factories</a>
+    <a href="https://kalistorik.com/#contact" data-nav="nav_contact">contact</a>
+    <div class="lang-switch">
+      <button class="lang-btn" id="lang-btn" aria-label="Language">English ▾</button>
+      <ul class="lang-dropdown" id="lang-dropdown">
+        <li><button data-lang="en" class="active">English</button></li>
+        <li><button data-lang="fr">Français</button></li>
+        <li><button data-lang="de">Deutsch</button></li>
+        <li><button data-lang="it">Italiano</button></li>
+        <li><button data-lang="es">Español</button></li>
+        <li><button data-lang="pt">Português</button></li>
+      </ul>
+    </div>
   </nav>
 </header>
 
@@ -568,9 +779,9 @@
 
     <div class="hook3__content">
       <div class="hook3__eyebrow">A true story · Porto, 2019</div>
-      <h1 class="hook3__title">The first two orders went perfectly.<br/>The third one didn't.</h1>
-      <p class="hook3__sub">That's when a buyer in Porto called us. Not after the first order — after the third. When his old supplier started cutting corners.</p>
-      <a class="hook3__cta" href="#story" data-cta="hook3-story">What happened next</a>
+      <h1 class="hook3__title"><span data-i18n="picks_first_two">The first two orders went perfectly.</span><br/><span data-i18n="picks_third_didnt">The third one didn't.</span></h1>
+      <p class="hook3__sub" data-i18n="story1_intro">A buyer in Porto reached out. Not after the first order — after the third. When cutting corners started, the pattern was clear.</p>
+      <a class="hook3__cta" href="#story" data-cta="hook3-story" data-i18n="picks_what_next">What happened next</a>
       <div class="hook-contact" style="margin-top:2rem;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap">
         <a href="/wa.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border:1px solid rgba(255,255,255,0.3);border-radius:30px;color:#fff;font-size:13px;letter-spacing:0.03em;transition:all 300ms;text-decoration:none" onmouseover="this.style.borderColor='#C9A96E';this.style.color='#C9A96E'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)';this.style.color='#fff'">WhatsApp</a>
         <a href="mailto:hello@kalistorik.com" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border:1px solid rgba(255,255,255,0.3);border-radius:30px;color:#fff;font-size:13px;letter-spacing:0.03em;transition:all 300ms;text-decoration:none" onmouseover="this.style.borderColor='#C9A96E';this.style.color='#C9A96E'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)';this.style.color='#fff'">Email</a>
@@ -583,14 +794,14 @@
            aria-roledescription="slide" aria-label="Two of three">
     <div class="hook1__inner">
       <div class="hook1__line" aria-hidden="true"></div>
-      <h2 class="hook1__title">We say no to more factories<br/>than most sourcing agents ever visit.</h2>
-      <p class="hook1__sub">Kalis exists for the studios, retailers and brands who'd rather lose a deal than ship something that doesn't belong in their store. Most of our week is spent walking away.</p>
+      <h2 class="hook1__title" data-i18n="story1_hook1">More factories refused<br/>than most agents ever visit.</h2>
+      <p class="hook1__sub" data-i18n="story1_body">KALIS TORIK works for studios, retailers, and brands who choose quality over volume. Most of the week: walking away from the wrong ones.</p>
 
       <div class="hook1__counter">
         <strong id="factoryCount"></strong>
-        <span>factories in our network · new partners added every year</span>
+        <span data-i18n="story1_stats">Factories in the network · new partners added every year</span>
       </div>
-      <div class="hook1__ps">PS. One factory offered us 40% commission. We never called them back.</div>
+      <div class="hook1__ps" data-i18n="story1_ps">PS. One factory offered 40% commission. The call was never returned.</div>
       <div class="hook-contact" style="margin-top:2.4rem;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap">
         <a href="/wa.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border:1px solid rgba(255,255,255,0.2);border-radius:30px;color:#fff;font-size:13px;letter-spacing:0.03em;transition:all 300ms;text-decoration:none" onmouseover="this.style.borderColor='#C9A96E';this.style.color='#C9A96E'" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)';this.style.color='#fff'">WhatsApp</a>
         <a href="mailto:hello@kalistorik.com" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border:1px solid rgba(255,255,255,0.2);border-radius:30px;color:#fff;font-size:13px;letter-spacing:0.03em;transition:all 300ms;text-decoration:none" onmouseover="this.style.borderColor='#C9A96E';this.style.color='#C9A96E'" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)';this.style.color='#fff'">Email</a>
@@ -607,10 +818,10 @@
     </div>
 
     <div class="hook2__content">
-      <div class="hook2__note">A note for first-time buyers</div>
-      <h2 class="hook2__title">Your first order doesn't need to be perfect.<br/>It needs to be real.</h2>
-      <p class="hook2__sub">We've done <em>30-piece trials</em> for Berlin studios and <em>200-bed runs</em> for Madrid retailers. Start where you are. We'll figure out the rest, together.</p>
-      <a class="hook2__cta" href="#first-order" data-cta="hook2-first">What a first order actually looks like</a>
+      <div class="hook2__note" data-i18n="picks_note_buyers">A note for first-time buyers</div>
+      <h2 class="hook2__title" data-i18n="picks_first_order_title">Your first order doesn't need to be perfect.<br/>It needs to be real.</h2>
+      <p class="hook2__sub" data-i18n="story2_body"><em>30-piece trials</em> for Berlin studios. <em>200-bed runs</em> for Madrid retailers. Every size has a path. Start where you are. The rest gets figured out, step by step.</p>
+      <a class="hook2__cta" href="#first-order" data-cta="hook2-first" data-i18n="picks_what_looks_like">What a first order actually looks like</a>
       <div class="hook-contact" style="margin-top:1.8rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
         <a href="/wa.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border:1px solid var(--ink-soft);border-radius:30px;color:var(--ink);font-size:13px;letter-spacing:0.03em;transition:all 300ms;text-decoration:none" onmouseover="this.style.borderColor='#C9A96E';this.style.color='#C9A96E'" onmouseout="this.style.borderColor='var(--ink-soft)';this.style.color='var(--ink)'">WhatsApp</a>
         <a href="mailto:hello@kalistorik.com" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border:1px solid var(--ink-soft);border-radius:30px;color:var(--ink);font-size:13px;letter-spacing:0.03em;transition:all 300ms;text-decoration:none" onmouseover="this.style.borderColor='#C9A96E';this.style.color='#C9A96E'" onmouseout="this.style.borderColor='var(--ink-soft)';this.style.color='var(--ink)'">Email</a>
@@ -850,27 +1061,6 @@
   // ===========================================================
   // Picks modal: click a slide to open a detailed card with CTA
   // ===========================================================
-  var MODAL_CONTENT = {
-    hook1: {
-      title: "We say no to more factories than most sourcing agents ever visit.",
-      body:  "A small list, kept that way on purpose. After twenty years, we still walk the floor ourselves.",
-      cta:   "Ask us what we'd refuse today",
-      href:  "/wa.html"
-    },
-    hook2: {
-      title: "Your first order doesn't need to be perfect. It needs to be real.",
-      body:  "Some of our first buyers sent 30 pieces. We sent back photos before the balance. That part doesn't change.",
-      cta:   "Talk through your first order",
-      href:  "/wa.html"
-    },
-    hook3: {
-      title: "Twenty years on the ground. One person, start to finish.",
-      body:  "From the first sample to the container at your port. No team handoff, no rotating rep.",
-      cta:   "See how it works",
-      href:  "/wa.html"
-    }
-  };
-
   var modal = document.getElementById('picks-modal');
   var modalTitle = document.getElementById('picks-modal-title');
   var modalBody  = document.getElementById('picks-modal-body');
@@ -879,7 +1069,13 @@
 
   function openModal(key) {
     if (!modal) return;
-    var data = MODAL_CONTENT[key];
+    var t = (window.__LANGS__ && window.__LANGS__[(window.__curLang__ || window.__LANGS__._lang || 'en')]) || {};
+    var map = {
+      hook1: { title: t.story1_hook1 || "More factories refused than most agents ever visit.", body: t.hook1_body || "A small list, kept that way on purpose. More than two decades, and factory floors are still walked in person.", cta: t.hook1_cta || "Ask what gets refused today", href: "/wa.html" },
+      hook2: { title: t.picks_first_order_title || "Your first order doesn't need to be perfect. It needs to be real.", body: t.hook2_body || "Some buyers started with just 30 pieces. Photos before payment. That part never changes.", cta: t.picks_what_looks_like || "What a first order actually looks like", href: "/wa.html" },
+      hook3: { title: t.hook3_title || "More than 20 years on the ground. Full service, start to finish.", body: t.hook3_body || "From first contact to your port. One dedicated contact, all the way.", cta: t.picks_what_next || "What happened next", href: "/wa.html" }
+    };
+    var data = map[key];
     if (!data) return;
     modalTitle.textContent = data.title;
     modalBody.textContent  = data.body;
@@ -957,6 +1153,30 @@
     mqMobile.addListener(applyMobileLayout);
   }
 })();
+
+  // ── Language dropdown ──
+  document.getElementById('lang-btn').addEventListener('click', function(e) {
+    e.stopPropagation();
+    document.getElementById('lang-dropdown').classList.toggle('show');
+  });
+  document.querySelectorAll('#lang-dropdown button').forEach(function(b) {
+    b.addEventListener('click', function(e) {
+      e.stopPropagation();
+      setLang(b.getAttribute('data-lang'));
+      document.getElementById('lang-dropdown').classList.remove('show');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.getElementById('lang-dropdown').classList.remove('show');
+  });
+
+  // ── Init language from localStorage ──
+  var sl = null;
+  try { sl = localStorage.getItem('kalis-lang'); } catch(e) {}
+  var supported = ['en','fr','de','it','es','pt'];
+  if (sl && supported.indexOf(sl) >= 0) {
+    setLang(sl);
+  }
 </script>
 
 </body>
