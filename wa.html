@@ -36,28 +36,51 @@
   }
   h1 {
     margin: 0;
-    font-size: clamp(36px, 5vw, 48px);
+    font-size: clamp(28px, 4vw, 40px);
     font-weight: 500;
     letter-spacing: -0.02em;
     color: #ffffff;
+    line-height: 1.3;
   }
   .line {
     width: 60px;
     height: 1px;
     background: #C9A96E;
-    margin: 24px 0;
+    margin: 28px 0;
     border: 0;
   }
   .sub {
-    margin: 0;
-    font-size: 14px;
+    margin: 0 0 36px;
+    font-size: 15px;
     color: #888888;
     letter-spacing: 0.02em;
   }
+  .btn {
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #000000;
+    background: #25D366;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: background 200ms ease, transform 150ms ease;
+    -webkit-appearance: none;
+  }
+  .btn:hover {
+    background: #1ebe57;
+    transform: scale(1.03);
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
   .fallback {
-    margin-top: 40px;
+    margin-top: 28px;
     font-size: 13px;
-    color: #888888;
+    color: #666666;
   }
   .fallback a {
     color: #C9A96E;
@@ -70,16 +93,28 @@
     color: #ffffff;
     border-bottom-color: #ffffff;
   }
+  .back {
+    margin-top: 32px;
+    font-size: 13px;
+    color: #555555;
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+  .back:hover {
+    color: #ffffff;
+  }
 </style>
 </head>
 <body>
   <main class="wrap">
-    <h1>Opening WhatsApp&hellip;</h1>
+    <h1>You&rsquo;re about to message KALIS TORIK on WhatsApp</h1>
     <hr class="line" aria-hidden="true">
-    <p class="sub">KALIS TORIK &middot; Sourcing partner since 2005</p>
+    <p class="sub">We reply within hours. No bots. No auto-replies.</p>
+    <button class="btn" id="btn-continue">Continue to WhatsApp &rarr;</button>
     <p class="fallback">
-      If nothing happens, <a href="https://wa.me/8613602222361?text=Hi%2C%20I%20came%20from%20your%20website.%20I%27d%20like%20to%20learn%20more." onclick="if(typeof gtag==='function'){gtag('event','wa_redirect',{'event_category':'contact','event_label':'shortlink','transport_type':'beacon'});}">Open WhatsApp</a>.
+      Button not working? <a href="https://wa.me/8613602222361?text=Hi%2C%20I%20came%20from%20your%20website.%20I%27d%20like%20to%20learn%20more." id="link-fallback" onclick="if(typeof gtag==='function'){gtag('event','wa_redirect',{'event_category':'contact','event_label':'fallback_link','transport_type':'beacon'});}">Open WhatsApp directly</a>.
     </p>
+    <a href="javascript:history.back()" class="back">&larr; Go back</a>
   </main>
 
   <!-- Google Analytics 4 -->
@@ -90,17 +125,28 @@
     gtag('js', new Date());
     gtag('config', 'G-YRPEYWWLM1', { 'send_page_view': false });
 
-    // Fire redirect event then jump after 300ms
+    // Track page land — all visitors including accidental clicks & bots
     if (typeof gtag === 'function') {
-      gtag('event', 'wa_redirect', {
+      gtag('event', 'wa_pageview', {
         'event_category': 'contact',
-        'event_label': 'shortlink',
+        'event_label': 'landing',
         'transport_type': 'beacon'
       });
     }
-    setTimeout(function () {
-      window.location.href = 'https://wa.me/8613602222361?text=Hi%2C%20I%20came%20from%20your%20website.%20I%27d%20like%20to%20learn%20more.';
-    }, 300);
+
+    // Confirm button — fires wa_redirect only on real intent
+    document.getElementById('btn-continue').addEventListener('click', function() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'wa_redirect', {
+          'event_category': 'contact',
+          'event_label': 'confirmed',
+          'transport_type': 'beacon'
+        });
+      }
+      setTimeout(function() {
+        window.location.href = 'https://wa.me/8613602222361?text=Hi%2C%20I%20came%20from%20your%20website.%20I%27d%20like%20to%20learn%20more.';
+      }, 200);
+    });
   </script>
 </body>
 </html>
