@@ -1,5 +1,35 @@
 # Ledger
 
+## 2026-06-30 · 玛门 · 全站审计
+
+event=audit_done
+task=kalistorik.pages.dev 全站完整审查
+auditor=玛门 (Claude Code)
+target=index.html + 线上
+
+### 摘要
+🔴 12 · 🟡 14 · 🟢 13
+
+### 🔴 严重
+1. URL 架构三重冲突：canonical( /en.html→/en/ ) / _redirects( .html→?lang= ) / meta-refresh( /en/ → ?lang=en )
+2. Schema Product price="0" ×4
+3. Sofa Beds / Chairs tab 无 data-i18n
+4. Quality Modal 全硬编码英文
+5. Mini Inquiry Modal 全硬编码英文
+6. Promo Drawer 全硬编码英文
+7. CF email obfuscation 在 pages.dev 上无法解码
+8. 空 CSS 块 L155-162 / L200-206
+9. 断裂 CSS `article article` L266-267
+10. 断裂 CSS `.inquiry-modal-field input` L353
+11. 空 @media(max-width:992px){} L270
+12. (合成) 5 处 i18n 硬编码合并为一项
+
+### 🟡 轻微
+sitemap 缺 lastmod / sitemap URL 格式与 canonical 不一致 / og:image 是 favicon / LinkedIn 999 / 无 mailto fallback / Newsletter placeholder 硬编码 / L7 favicon 共行 / Google Fonts 双加载风险 / Quality Modal emoji / _redirects 不完整 / preconnect 分散
+
+### 🟢 通过
+hreflang / twitter card / robots / 6 语 __LANGS__ 完整 / 语言切换 / WA/IG/FB 社媒 / privacy.html / footer / modal 初始隐藏 / 移动端响应式 / 安全头
+
 ## 2026-06-30 · 路西法 · P0P1 修复审查
 
 event=review_done
