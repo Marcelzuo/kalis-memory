@@ -672,7 +672,7 @@ article
       <textarea name="Message" placeholder="Message" data-i18n-placeholder="contact_message" class="full-width"></textarea>
             <div class="consent-checkbox">
         <input type="checkbox" id="privacy-consent" required onchange="this.closest('form').querySelector('#contact-submit').disabled=!this.checked">
-        <label for="privacy-consent"><span data-i18n="contact_consent">I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a></span></label>
+        <label for="privacy-consent"><span data-i18n-html="contact_consent">I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a></span></label>
       </div>
       <button type="submit" id="contact-submit" disabled data-i18n="contact_submit">Send Inquiry</button>
     </form>
@@ -705,7 +705,7 @@ article
   </div>
   <p class="footer-text" data-i18n="footer_text">Your China Sourcing Partner</p>
   <p class="footer-family" data-i18n="footer_family">A KALIS Group Brand · Furniture & Apparel</p>
-<span data-i18n="footer_privacy"><a href="/privacy.html">Privacy Policy</a></span>
+<span data-i18n-html="footer_privacy"><a href="/privacy.html">Privacy Policy</a></span>
 </footer>
 
 
@@ -860,7 +860,7 @@ var __esc__ = function(s){return String(s||'').replace(/&/g,'&amp;').replace(/</
 document.documentElement.lang=lang;
 document.querySelectorAll('[data-i18n-aria]').forEach(function(e){var k=e.getAttribute('data-i18n-aria');if(t[k])e.setAttribute('aria-label',t[k]);});document.querySelectorAll('[data-i18n]').forEach(function(el){
   var k=el.getAttribute('data-i18n');if(t[k])el.innerHTML=__esc__(t[k]);
-});
+});document.querySelectorAll("[data-i18n-html]").forEach(function(el){var k=el.getAttribute("data-i18n-html");if(t[k])el.innerHTML=t[k];});
 document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
   var k=el.getAttribute('data-i18n-placeholder');if(t[k])el.placeholder=t[k];
 });
