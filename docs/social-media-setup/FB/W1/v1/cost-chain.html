@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalistorik — Real Procurement Cost</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #FAF8F5;
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ── Ambient blobs ── */
+  .ambient {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .ambient-tr {
+    width: 560px; height: 560px;
+    top: -200px; right: -140px;
+    background: radial-gradient(circle, rgba(201,169,110,0.055) 0%, transparent 72%);
+  }
+  .ambient-bl {
+    width: 420px; height: 420px;
+    bottom: 40px; left: -90px;
+    background: radial-gradient(circle, rgba(201,169,110,0.045) 0%, transparent 72%);
+  }
+  .ambient-mid {
+    width: 380px; height: 380px;
+    top: 380px; right: 30px;
+    background: radial-gradient(circle, rgba(201,169,110,0.06) 0%, rgba(201,169,110,0.015) 55%, transparent 72%);
+  }
+
+  /* ── Decorative gold lines ── */
+  .gold-hr {
+    position: absolute;
+    left: 80px; right: 80px;
+    height: 1px;
+    z-index: 0;
+  }
+  .gold-hr.top {
+    top: 38px;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,0.45), transparent);
+  }
+  .gold-hr.pre-footer {
+    bottom: 148px;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,0.3), transparent);
+  }
+
+  /* ── Header ── */
+  .header {
+    margin-top: 74px;
+    text-align: center;
+    z-index: 1;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 9px;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    line-height: 1.25;
+  }
+  .header .cn-sub {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #C9A96E;
+    margin-top: 10px;
+  }
+  .header .rule {
+    width: 48px;
+    height: 2px;
+    background: #C9A96E;
+    margin: 14px auto 0;
+    opacity: 0.7;
+  }
+
+  /* ── Cost flow container ── */
+  .flow-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-top: 48px;
+  }
+  /* Price path — gold line growing left to right behind cards */
+  .price-path {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 30px;
+    height: 2px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg,
+      rgba(201,169,110,0.12) 0%,
+      rgba(201,169,110,0.2) 30%,
+      rgba(201,169,110,0.35) 60%,
+      rgba(201,169,110,0.6) 100%);
+    border-radius: 1px;
+    z-index: 0;
+  }
+  /* Magnifying lens ring behind retail card */
+  .lens-ring {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(201,169,110,0.2);
+    border-radius: 50%;
+    top: 50%;
+    right: 48px;
+    transform: translateY(-50%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .lens-ring::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(201,169,110,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cost-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── Cards ── */
+  .cost-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(201,169,110,0.18);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.028);
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  /* Progressive sizing */
+  .card-1 { width: 106px; height: 128px; }
+  .card-2 { width: 128px; height: 150px; }
+  .card-3 { width: 152px; height: 178px; }
+  .card-4 { width: 180px; height: 210px; }
+  .card-5 {
+    width: 224px; height: 260px;
+    border: 2px solid #C9A96E;
+    box-shadow: 0 4px 30px rgba(201,169,110,0.1);
+  }
+
+  .card-1 .price { font-size: 28px; font-weight: 600; letter-spacing: -1px; }
+  .card-2 .price { font-size: 34px; font-weight: 600; letter-spacing: -1px; }
+  .card-3 .price { font-size: 42px; font-weight: 600; letter-spacing: -2px; }
+  .card-4 .price { font-size: 52px; font-weight: 600; letter-spacing: -2px; }
+  .card-5 .price { font-size: 68px; font-weight: 600; letter-spacing: -3px; }
+
+  .price { color: #2D2D2D; line-height: 1; }
+
+  .card-label {
+    font-weight: 400;
+    color: #999;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    line-height: 1;
+  }
+  .card-1 .card-label { font-size: 10px; }
+  .card-2 .card-label { font-size: 10px; }
+  .card-3 .card-label { font-size: 11px; }
+  .card-4 .card-label { font-size: 12px; }
+  .card-5 .card-label { font-size: 13px; }
+
+  .card-delta {
+    font-weight: 500;
+    color: #C9A96E;
+    margin-top: 3px;
+    line-height: 1;
+  }
+  .card-1 .card-delta { font-size: 10px; opacity: 0; }
+  .card-2 .card-delta { font-size: 10px; }
+  .card-3 .card-delta { font-size: 11px; }
+  .card-4 .card-delta { font-size: 12px; }
+  .card-5 .card-delta { font-size: 14px; font-weight: 600; }
+
+  /* ── Arrow ── */
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .arrow svg { display: block; }
+
+  /* ── Reveal bar ── */
+  .reveal {
+    margin-top: 38px;
+    z-index: 1;
+    text-align: center;
+  }
+  .reveal .mul {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 7px;
+    color: #C9A96E;
+  }
+  .reveal .mul .big {
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin: 0 3px;
+    line-height: 1;
+  }
+  .reveal .note {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #b5b5b5;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    z-index: 1;
+  }
+  .footer .logo-line {
+    width: 80px;
+    height: 2px;
+    background: #C9A96E;
+    margin: 0 auto 12px;
+    opacity: 0.6;
+  }
+  .footer .brand {
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 22px;
+    color: #2D2D2D;
+    line-height: 1;
+    margin-right: -22px;
+    white-space: nowrap;
+  }
+  .footer .tagline {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 18px;
+    color: #2D2D2D;
+    margin-top: 4px;
+    line-height: 1;
+    margin-right: -18px;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Ambient -->
+  <div class="ambient ambient-tr"></div>
+  <div class="ambient ambient-bl"></div>
+  <div class="ambient ambient-mid"></div>
+
+  <!-- Gold lines -->
+  <div class="gold-hr top"></div>
+  <div class="gold-hr pre-footer"></div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>The Price Chain</h1>
+    <div class="cn-sub">真实采购成本账</div>
+    <div class="rule"></div>
+  </div>
+
+  <!-- Cost Flow -->
+  <div class="flow-wrapper">
+    <div class="price-path"></div>
+    <div class="lens-ring"></div>
+
+    <div class="cost-flow">
+      <!-- Card 1 -->
+      <div class="cost-card card-1">
+        <div class="price">&euro;8,500</div>
+        <div class="card-label">Ex-Works</div>
+        <div class="card-delta">&nbsp;</div>
+      </div>
+
+      <div class="arrow">
+        <svg width="26" height="12" viewBox="0 0 26 12">
+          <path d="M2 6h19M18 2l5 4-5 4" stroke="#C9A96E" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cost-card card-2">
+        <div class="price">&euro;9,775</div>
+        <div class="card-label">+ Sourcing</div>
+        <div class="card-delta">+&euro;1,275</div>
+      </div>
+
+      <div class="arrow">
+        <svg width="26" height="12" viewBox="0 0 26 12">
+          <path d="M2 6h19M18 2l5 4-5 4" stroke="#C9A96E" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="cost-card card-3">
+        <div class="price">&euro;12,135</div>
+        <div class="card-label">+ Logistics</div>
+        <div class="card-delta">+&euro;2,360</div>
+      </div>
+
+      <div class="arrow">
+        <svg width="26" height="12" viewBox="0 0 26 12">
+          <path d="M2 6h19M18 2l5 4-5 4" stroke="#C9A96E" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="cost-card card-4">
+        <div class="price">&euro;13,000</div>
+        <div class="card-label">+ QC &amp; WH</div>
+        <div class="card-delta">+&euro;865</div>
+      </div>
+
+      <div class="arrow arrow-last">
+        <svg width="26" height="12" viewBox="0 0 26 12">
+          <path d="M2 6h19M18 2l5 4-5 4" stroke="#C9A96E" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Card 5: Retail -->
+      <div class="cost-card card-5">
+        <div class="price">&euro;26,000</div>
+        <div class="card-label">Retail</div>
+        <div class="card-delta">2&times; markup</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reveal -->
+  <div class="reveal">
+    <div class="mul">&#x51FA;&#x5382;&#x4EF7;&#x7684; <span class="big">3&times;</span></div>
+    <div class="note">From Factory Floor to Showroom</div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="logo-line"></div>
+    <div class="brand">KALIS</div>
+    <div class="tagline">TORIK</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(170deg, #E8EFE9 0%, #D4DFD6 30%, #C8D5CA 60%, #B7C9B9 100%);
+    font-family: 'Montserrat', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ── golden glow behind right side ── */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 160px;
+    right: 80px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.10) 0%, rgba(212, 175, 55, 0.03) 50%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* ── subtle top accent line ── */
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.25), transparent);
+    pointer-events: none;
+  }
+
+  .main-scene {
+    position: relative;
+    width: 920px;
+    height: 560px;
+    margin-top: 30px;
+  }
+
+  /* ═══════════ LEFT: 3 opaque middlemen ═══════════ */
+  .middlemen { position: absolute; left: 20px; top: 0; width: 320px; height: 560px; }
+
+  .middleman {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    background: rgba(200, 208, 200, 0.55);
+    border: 1.5px solid rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+  }
+
+  .middleman .qmark {
+    font-size: 58px;
+    font-weight: 400;
+    color: #6B7B6D;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1;
+  }
+
+  .middleman .label {
+    font-size: 10px;
+    color: #8A9A8C;
+    letter-spacing: 0.8px;
+    margin-top: 6px;
+    font-family: system-ui, 'PingFang SC', sans-serif;
+  }
+
+  /* staggered/scattered layout */
+  .mm1 { top: 30px;  left: 10px; }
+  .mm2 { top: 210px; left: 95px; }
+  .mm3 { top: 390px; left: 25px; }
+
+  /* faint X marks to suggest opacity */
+  .middleman::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(150,160,150,0.35);
+  }
+
+  /* ═══════════ CENTER: converging arrows ═══════════ */
+  .arrow-group { position: absolute; left: 370px; top: 20px; width: 180px; height: 520px; }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow-line {
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .arrow-head {
+    width: 0; height: 0;
+    border-left: 12px solid #C4A840;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+
+  .a1 { top: 76px; }
+  .a1 .arrow-line { width: 130px; background: linear-gradient(90deg, #A3B0A4 0%, #C4A840 100%); }
+
+  .a2 { top: 254px; }
+  .a2 .arrow-line { width: 90px; background: linear-gradient(90deg, #A3B0A4 0%, #C4A840 100%); }
+
+  .a3 { top: 432px; }
+  .a3 .arrow-line { width: 118px; background: linear-gradient(90deg, #A3B0A4 0%, #C4A840 100%); }
+
+  /* ═══════════ CONVERGE POINT ═══════════ */
+  .converge-dot {
+    position: absolute;
+    left: 555px;
+    top: 270px;
+    width: 20px;
+    height: 20px;
+    background: #D4AF37;
+    border-radius: 50%;
+    box-shadow: 0 0 24px rgba(212,175,55,0.55), 0 0 70px rgba(212,175,55,0.18), 0 0 120px rgba(212,175,55,0.08);
+    transform: translate(-50%, -50%);
+  }
+
+  /* vertical golden line from converge dot down */
+  .converge-line {
+    position: absolute;
+    left: 555px;
+    top: 280px;
+    width: 1.5px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(212,175,55,0.7) 0%, rgba(212,175,55,0) 100%);
+    transform: translateX(-50%);
+  }
+
+  /* ═══════════ RIGHT: transparent partner brand ═══════════ */
+  .brand-block {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 300px;
+    background: rgba(255,255,255,0.62);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 32px;
+    padding: 56px 40px;
+    border: 1.5px solid rgba(212,175,55,0.28);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.05), 0 0 80px rgba(212,175,55,0.06);
+  }
+
+  /* subtle inner glow */
+  .brand-block::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border-radius: 28px;
+    background: radial-gradient(ellipse at center, rgba(212,175,55,0.04) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .brand-block .gold-line-top {
+    width: 50px;
+    height: 2px;
+    background: #D4AF37;
+    margin: 0 auto 22px;
+    border-radius: 1px;
+    opacity: 0.6;
+  }
+
+  .brand-block .brand-kalis {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    color: #3A4F3C;
+    letter-spacing: 6px;
+    line-height: 1;
+  }
+
+  .brand-block .brand-torik {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #888;
+    letter-spacing: 8px;
+    margin-top: 4px;
+  }
+
+  .brand-block .tagline {
+    font-size: 15px;
+    color: #5A6B5D;
+    letter-spacing: 2px;
+    font-family: system-ui, 'PingFang SC', sans-serif;
+    margin-top: 18px;
+    line-height: 1.6;
+  }
+
+  /* small checkmark icon */
+  .brand-block .check-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(180, 200, 165, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px auto 0;
+    font-size: 16px;
+    color: #5A7A5D;
+    font-family: system-ui, sans-serif;
+  }
+
+  /* ═══════════ BOTTOM LOGO BAR ═══════════ */
+  .logo-bar {
+    position: absolute;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo-bar .gold-line-bot {
+    width: 80px;
+    height: 1.5px;
+    background: #D4AF37;
+    border-radius: 1px;
+    opacity: 0.5;
+  }
+
+  .logo-bar .logo-kalis {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    color: #3A4F3C;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+
+  .logo-bar .logo-torik {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #888;
+    letter-spacing: 6px;
+  }
+
+  /* ═══════════ decorative ring ═══════════ */
+  .thin-ring {
+    position: absolute;
+    top: 460px;
+    right: 400px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 1px solid rgba(212,175,55,0.10);
+    pointer-events: none;
+  }
+
+  .thin-ring2 {
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.04);
+    pointer-events: none;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="main-scene">
+
+  <!-- LEFT: 3 opaque/questionable middlemen -->
+  <div class="middlemen">
+    <div class="middleman mm1">
+      <span class="qmark">?</span>
+      <span class="label">中间商 A</span>
+    </div>
+    <div class="middleman mm2">
+      <span class="qmark">?</span>
+      <span class="label">中间商 B</span>
+    </div>
+    <div class="middleman mm3">
+      <span class="qmark">?</span>
+      <span class="label">中间商 C</span>
+    </div>
+  </div>
+
+  <!-- ARROWS converging -->
+  <div class="arrow-group">
+    <div class="arrow a1"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+    <div class="arrow a2"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+    <div class="arrow a3"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+  </div>
+
+  <!-- converge visual -->
+  <div class="converge-dot"></div>
+  <div class="converge-line"></div>
+
+  <!-- RIGHT: transparent partner -->
+  <div class="brand-block">
+    <div class="gold-line-top"></div>
+    <div class="brand-kalis">KALIS</div>
+    <div class="brand-torik">TORIK</div>
+    <div class="tagline">一个透明的采购伙伴</div>
+    <div class="check-icon">&#10003;</div>
+  </div>
+
+  <!-- decorative -->
+  <div class="thin-ring"></div>
+  <div class="thin-ring2"></div>
+
+</div>
+
+<!-- BOTTOM LOGO BAR -->
+<div class="logo-bar">
+  <div class="gold-line-bot"></div>
+  <span class="logo-kalis">KALIS</span>
+  <span class="logo-torik">TORIK</span>
+</div>
+
+</body>
+</html>

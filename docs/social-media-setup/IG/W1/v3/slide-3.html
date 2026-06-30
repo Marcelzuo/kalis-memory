@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px; height: 1080px;
+  background: #FAF8F5;
+  font-family: 'Montserrat', sans-serif;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.top-accent {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 6px; background: #C9A96E;
+}
+.main-content {
+  text-align: center;
+  padding: 0 80px;
+  margin-top: -30px;
+}
+.section-title {
+  font-size: 20px; font-weight: 400;
+  color: #C9A96E; letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.columns {
+  display: flex; gap: 48px;
+  justify-content: center;
+}
+.column {
+  flex: 1; max-width: 260px;
+}
+.icon {
+  font-size: 48px; margin-bottom: 20px;
+}
+.product-name {
+  font-size: 22px; font-weight: 500;
+  color: #2D2D2D; margin-bottom: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.price-row {
+  display: flex; align-items: center;
+  justify-content: center; gap: 14px;
+  margin-bottom: 12px;
+}
+.price-china {
+  font-size: 38px; font-weight: 700;
+  color: #C9A96E;
+}
+.price-vs {
+  font-size: 16px; font-weight: 300;
+  color: #bbb;
+}
+.price-eu {
+  font-size: 28px; font-weight: 300;
+  color: #888; text-decoration: line-through;
+}
+.saving {
+  font-size: 14px; font-weight: 500;
+  color: #C9A96E; letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.col-divider {
+  width: 1px; background: #e8e4dc;
+  align-self: stretch;
+}
+.bottom-logo {
+  position: absolute; bottom: 60px;
+  text-align: center;
+}
+.gold-line {
+  width: 180px; height: 1px;
+  background: #C9A96E;
+  margin: 0 auto 24px auto;
+}
+.logo-kalis {
+  font-size: 64px; font-weight: 300;
+  color: #2D2D2D; letter-spacing: 22px;
+}
+.logo-torik {
+  font-size: 16px; font-weight: 200;
+  color: #888; letter-spacing: 18px;
+  margin-top: 2px;
+}
+</style>
+</head>
+<body>
+<div class="top-accent"></div>
+<div class="main-content">
+  <div class="section-title">China Direct vs European Retail</div>
+  <div class="columns">
+    <div class="column">
+      <div class="icon">🛋️</div>
+      <div class="product-name">Sofas</div>
+      <div class="price-row">
+        <span class="price-china">€1,200</span>
+        <span class="price-vs">vs</span>
+        <span class="price-eu">€3,400</span>
+      </div>
+      <div class="saving">save up to 65%</div>
+    </div>
+    <div class="col-divider"></div>
+    <div class="column">
+      <div class="icon">🛏️</div>
+      <div class="product-name">Beds</div>
+      <div class="price-row">
+        <span class="price-china">€680</span>
+        <span class="price-vs">vs</span>
+        <span class="price-eu">€1,900</span>
+      </div>
+      <div class="saving">save up to 64%</div>
+    </div>
+    <div class="col-divider"></div>
+    <div class="column">
+      <div class="icon">🍽️</div>
+      <div class="product-name">Dining</div>
+      <div class="price-row">
+        <span class="price-china">€420</span>
+        <span class="price-vs">vs</span>
+        <span class="price-eu">€1,150</span>
+      </div>
+      <div class="saving">save up to 63%</div>
+    </div>
+  </div>
+</div>
+<div class="bottom-logo">
+  <div class="gold-line"></div>
+  <div class="logo-kalis">KALIS</div>
+  <div class="logo-torik">TORIK</div>
+</div>
+</body>
+</html>

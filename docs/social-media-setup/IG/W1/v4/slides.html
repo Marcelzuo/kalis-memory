@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IG Carousel W1 V4</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#FAF8F5;font-family:'Montserrat',sans-serif}
+
+.slide{width:1080px;height:1080px;background:#FAF8F5;display:flex;flex-direction:column;overflow:hidden;position:relative}
+
+.content{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:48px 100px 24px}
+
+.logo{display:flex;flex-direction:column;align-items:center;padding-bottom:44px;flex-shrink:0}
+.logo-line{width:180px;height:2px;background:#C9A96E}
+.logo-line-m{margin-bottom:12px}
+.logo-kalis{font-family:'Montserrat',sans-serif;font-weight:300;font-size:64px;letter-spacing:22px;color:#2D2D2D;line-height:1.15;text-indent:22px}
+.logo-kalis-m{margin-bottom:4px}
+.logo-torik{font-family:'Montserrat',sans-serif;font-weight:200;font-size:16px;letter-spacing:18px;color:#888;line-height:1.15;text-indent:18px}
+
+/* S1 Hook */
+.s1-eyebrow{font-weight:300;font-size:18px;letter-spacing:12px;color:#C9A96E;text-transform:uppercase;margin-bottom:32px}
+.s1-hero{font-weight:600;font-size:280px;color:#C9A96E;line-height:0.85;margin-bottom:20px}
+.s1-line{font-weight:300;font-size:46px;color:#2D2D2D;line-height:1.35;text-align:center}
+.s1-line2{font-weight:300;font-size:46px;color:#2D2D2D;line-height:1.35;text-align:center}
+
+/* S2 Data */
+.s2-hero{font-weight:600;font-size:220px;color:#C9A96E;line-height:0.9;margin-bottom:16px}
+.s2-title{font-weight:300;font-size:42px;color:#2D2D2D;line-height:1.3;text-align:center;margin-bottom:32px}
+.s2-stat-row{display:flex;gap:80px}
+.s2-stat{text-align:center}
+.s2-stat-num{font-weight:600;font-size:56px;color:#C9A96E;line-height:1.1}
+.s2-stat-label{font-weight:300;font-size:18px;color:#888;line-height:1.4;margin-top:8px}
+
+/* S3 Table */
+.s3-title{font-weight:300;font-size:36px;color:#2D2D2D;margin-bottom:40px;text-align:center;letter-spacing:2px}
+.s3-table{width:100%;max-width:760px;border-collapse:collapse}
+.s3-table th{font-weight:300;font-size:18px;color:#888;letter-spacing:4px;text-transform:uppercase;padding:0 0 16px 0;text-align:left}
+.s3-table th:last-child{text-align:right}
+.s3-table th:nth-child(2),.s3-table th:nth-child(3){text-align:center}
+.s3-table td{font-weight:300;font-size:42px;color:#2D2D2D;padding:28px 0;vertical-align:baseline}
+.s3-table td:first-child{font-weight:400}
+.s3-table td:nth-child(2),.s3-table td:nth-child(3){text-align:center;font-weight:300}
+.s3-table td:last-child{text-align:right;font-weight:600;color:#C9A96E}
+.s3-row-line{height:1px;background:#E8E4DD}
+.s3-table tr.divider td{padding:0;height:1px}
+.s3-table tr.divider td div{height:1px;background:#E8E4DD}
+
+/* S4 Chart */
+.s4-layout{display:flex;align-items:center;gap:80px;width:100%;max-width:820px}
+.s4-chart{flex-shrink:0}
+.s4-legend{display:flex;flex-direction:column;gap:18px}
+.s4-legend-item{display:flex;align-items:center;gap:14px}
+.s4-legend-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+.s4-legend-label{font-weight:300;font-size:22px;color:#2D2D2D}
+.s4-legend-pct{font-weight:600;font-size:22px;color:#C9A96E;margin-left:auto}
+.s4-center-label{font-weight:600;font-size:28px;fill:#2D2D2D;text-anchor:middle}
+.s4-center-sub{font-weight:300;font-size:14px;fill:#888;text-anchor:middle}
+
+/* S5 CTA */
+.s5-eyebrow{font-weight:300;font-size:18px;letter-spacing:12px;color:#C9A96E;text-transform:uppercase;margin-bottom:40px}
+.s5-line1{font-weight:300;font-size:76px;color:#2D2D2D;line-height:1.25;text-align:center;letter-spacing:-0.5px}
+.s5-line2{font-weight:300;font-size:76px;color:#2D2D2D;line-height:1.25;text-align:center;letter-spacing:-0.5px;margin-bottom:28px}
+.s5-accent{display:inline-block;width:60px;height:2px;background:#C9A96E;margin-bottom:36px}
+.s5-url{font-weight:300;font-size:30px;color:#888;letter-spacing:4px}
+</style>
+</head>
+<body>
+
+<!-- S1: Hook -->
+<div class="slide" id="s1">
+  <div class="content">
+    <div class="s1-eyebrow">Why</div>
+    <div class="s1-hero">63%</div>
+    <div class="s1-line">of European Retailers</div>
+    <div class="s1-line2">Source From China</div>
+  </div>
+  <div class="logo">
+    <div class="logo-line logo-line-m"></div>
+    <div class="logo-kalis logo-kalis-m">KALIS</div>
+    <div class="logo-torik">TORIK</div>
+  </div>
+</div>
+
+<!-- S2: Data -->
+<div class="slide" id="s2">
+  <div class="content">
+    <div class="s2-hero">€48B</div>
+    <div class="s2-title">European Furniture Imports</div>
+    <div class="s2-stat-row">
+      <div class="s2-stat">
+        <div class="s2-stat-num">#1</div>
+        <div class="s2-stat-label">China ranks as<br>top source country</div>
+      </div>
+      <div class="s2-stat">
+        <div class="s2-stat-num">30%+</div>
+        <div class="s2-stat-label">Share of EU<br>furniture imports</div>
+      </div>
+      <div class="s2-stat">
+        <div class="s2-stat-num">12%</div>
+        <div class="s2-stat-label">Annual import<br>growth rate</div>
+      </div>
+    </div>
+  </div>
+  <div class="logo">
+    <div class="logo-line logo-line-m"></div>
+    <div class="logo-kalis logo-kalis-m">KALIS</div>
+    <div class="logo-torik">TORIK</div>
+  </div>
+</div>
+
+<!-- S3: Price Comparison -->
+<div class="slide" id="s3">
+  <div class="content">
+    <div class="s3-title">PRICE COMPARISON</div>
+    <table class="s3-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>China</th>
+          <th>Europe</th>
+          <th>You Save</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4" style="padding:0;height:1px"><div style="height:1px;background:#E8E4DD"></div></td>
+        </tr>
+        <tr>
+          <td>Sofa</td>
+          <td>&euro;1,200</td>
+          <td>&euro;3,400</td>
+          <td>&minus;65%</td>
+        </tr>
+        <tr>
+          <td colspan="4" style="padding:0;height:1px"><div style="height:1px;background:#E8E4DD"></div></td>
+        </tr>
+        <tr>
+          <td>Bed</td>
+          <td>&euro;680</td>
+          <td>&euro;1,900</td>
+          <td>&minus;64%</td>
+        </tr>
+        <tr>
+          <td colspan="4" style="padding:0;height:1px"><div style="height:1px;background:#E8E4DD"></div></td>
+        </tr>
+        <tr>
+          <td>Dining</td>
+          <td>&euro;420</td>
+          <td>&euro;1,150</td>
+          <td>&minus;63%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="logo">
+    <div class="logo-line logo-line-m"></div>
+    <div class="logo-kalis logo-kalis-m">KALIS</div>
+    <div class="logo-torik">TORIK</div>
+  </div>
+</div>
+
+<!-- S4: Pie Chart -->
+<div class="slide" id="s4">
+  <div class="content">
+    <div class="s3-title">COST BREAKDOWN</div>
+    <div class="s4-layout">
+      <div class="s4-chart" id="chart-container"></div>
+      <div class="s4-legend">
+        <div class="s4-legend-item">
+          <div class="s4-legend-dot" style="background:#C9A96E"></div>
+          <span class="s4-legend-label">Factory</span>
+          <span class="s4-legend-pct">55%</span>
+        </div>
+        <div class="s4-legend-item">
+          <div class="s4-legend-dot" style="background:#D4CFC6"></div>
+          <span class="s4-legend-label">Materials</span>
+          <span class="s4-legend-pct">22%</span>
+        </div>
+        <div class="s4-legend-item">
+          <div class="s4-legend-dot" style="background:#BFB8AE"></div>
+          <span class="s4-legend-label">Logistics</span>
+          <span class="s4-legend-pct">8%</span>
+        </div>
+        <div class="s4-legend-item">
+          <div class="s4-legend-dot" style="background:#A89F95"></div>
+          <span class="s4-legend-label">QC</span>
+          <span class="s4-legend-pct">6%</span>
+        </div>
+        <div class="s4-legend-item">
+          <div class="s4-legend-dot" style="background:#968D83"></div>
+          <span class="s4-legend-label">Margin</span>
+          <span class="s4-legend-pct">9%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="logo">
+    <div class="logo-line logo-line-m"></div>
+    <div class="logo-kalis logo-kalis-m">KALIS</div>
+    <div class="logo-torik">TORIK</div>
+  </div>
+</div>
+
+<!-- S5: CTA -->
+<div class="slide" id="s5">
+  <div class="content">
+    <div class="s5-eyebrow">Kalistorik</div>
+    <div class="s5-line1">Source Smarter.</div>
+    <div class="s5-line2">Sell Better.</div>
+    <div class="s5-accent"></div>
+    <div class="s5-url">kalistorik.com</div>
+  </div>
+  <div class="logo">
+    <div class="logo-line logo-line-m"></div>
+    <div class="logo-kalis logo-kalis-m">KALIS</div>
+    <div class="logo-torik">TORIK</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function polarToCartesian(cx, cy, r, angleDeg){
+    var rad = (angleDeg - 90) * Math.PI / 180;
+    return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
+  }
+  function donutSegment(cx, cy, outerR, innerR, startDeg, endDeg){
+    var oS = polarToCartesian(cx, cy, outerR, startDeg);
+    var oE = polarToCartesian(cx, cy, outerR, endDeg);
+    var iS = polarToCartesian(cx, cy, innerR, startDeg);
+    var iE = polarToCartesian(cx, cy, innerR, endDeg);
+    var large = (endDeg - startDeg) > 180 ? 1 : 0;
+    return 'M '+oS.x+' '+oS.y+' A '+outerR+' '+outerR+' 0 '+large+' 1 '+oE.x+' '+oE.y+' L '+iE.x+' '+iE.y+' A '+innerR+' '+innerR+' 0 '+large+' 0 '+iS.x+' '+iS.y+' Z';
+  }
+  var segments = [
+    { start: 0,   end: 198,  color: '#C9A96E' },
+    { start: 198, end: 277.2, color: '#D4CFC6' },
+    { start: 277.2, end: 306, color: '#BFB8AE' },
+    { start: 306, end: 327.6, color: '#A89F95' },
+    { start: 327.6, end: 360, color: '#968D83' }
+  ];
+  var cx = 210, cy = 210, outerR = 200, innerR = 120;
+  var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">';
+  for(var i = 0; i < segments.length; i++){
+    var s = segments[i];
+    svg += '<path d="'+donutSegment(cx, cy, outerR, innerR, s.start, s.end)+'" fill="'+s.color+'"/>';
+  }
+  svg += '<text x="'+cx+'" y="'+(cy-8)+'" class="s4-center-label">100%</text>';
+  svg += '<text x="'+cx+'" y="'+(cy+18)+'" class="s4-center-sub">Total Cost</text>';
+  svg += '</svg>';
+  document.getElementById('chart-container').innerHTML = svg;
+})();
+</script>
+
+</body>
+</html>
