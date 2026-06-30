@@ -1,5 +1,33 @@
 # Ledger
 
+## 2026-06-30 · 玛门 · modal i18n 三弹窗翻译
+
+event=done
+what=quality-modal,promo-drawer,inquiry-modal 三个弹窗全部硬编码英文，切换语言不变
+how=
+- quality-modal: 8 元素加 data-i18n（qm_title/subtitle + 3 卡片 title+text）
+- promo-drawer: 4 元素加 data-i18n（promo_title/countdown/total/cta）
+- inquiry-modal: 6 元素加 data-i18n + 2 placeholder（labels/placeholders/submit/success）
+- __LANGS__: en/fr/de/it/es/pt 各加 20 新 key
+- JS: inquiry-modal 错误恢复按钮改用 __LANGS__.inq_submit
+files=index.html (+34/-19, 20 data-i18n attr + 120 translation keys + 1 JS line)
+verify=__LANGS__ 6 语言 qm_title/inq_success/promo_cta 均存在；HTML grep data-i18n 匹配 20 处
+
+## 2026-06-30 · 玛门 · catchall 域名重定向
+
+event=done
+task=pages.dev → kalistorik.com 301 重定向
+file=functions/[[catchall]].js
+lines=+4
+
+### 变更
+- 在现有 404 逻辑前插入 hostname 检查：`kalistorik.pages.dev` → 301 `kalistorik.com`（保持 pathname + search）
+- asset fetch / 404 fallback 逻辑不变
+
+commit: d60d394 fix: redirect kalistorik.pages.dev → kalistorik.com to eliminate duplicate content
+
+---
+
 ## 2026-06-30 · 玛门 · 全站审计
 
 event=audit_done
