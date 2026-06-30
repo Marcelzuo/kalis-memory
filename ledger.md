@@ -1,5 +1,19 @@
 # Ledger
 
+## 2026-06-30 · 玛门 · inject-modal-i18n.py 脚本
+
+event=done
+task=写 Python 脚本 /tools/inject-modal-i18n.py，读取 index.html 在 __LANGS__ fr/de/it/es 四语言块末尾注入 20 个 modal key
+file=tools/inject-modal-i18n.py (+179)
+verify=脚本运行通过，fr/de/it/es 四块已含全部 20 key；grep -c qm_title=2 (行数)，grep -o qm_title=7 (出现次数: HTML 1 + 6 语种各 1)
+
+### 脚本要点
+- 20 翻译 key 硬编码内置：qm_title→inq_success
+- 注入点：每语言块结束 `},"<next_lang>":` 处前插入
+- 幂等：检测 first key 已存在则 SKIP
+- 当前 index.html 六语种均已有 modal key，脚本输出 "No changes needed"
+
+---
 ## 2026-06-30 · 玛门 · modal i18n 三弹窗翻译
 
 event=done
