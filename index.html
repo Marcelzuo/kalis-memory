@@ -8,20 +8,20 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 <link rel="manifest" href="/site.webmanifest">
 <title id="page-title">KALIS TORIK - Chinese Furniture Sourcing Partner</title>
-<link rel="alternate" hreflang="en" href="https://kalistorik.com/?lang=en">
-<link rel="alternate" hreflang="fr" href="https://kalistorik.com/?lang=fr">
-<link rel="alternate" hreflang="de" href="https://kalistorik.com/?lang=de">
-<link rel="alternate" hreflang="it" href="https://kalistorik.com/?lang=it">
-<link rel="alternate" hreflang="es" href="https://kalistorik.com/?lang=es">
-<link rel="alternate" hreflang="pt" href="https://kalistorik.com/?lang=pt">
-<link rel="alternate" hreflang="x-default" href="https://kalistorik.com/">
+<link rel="alternate" hreflang="en" href="https://kalistorik.com/en.html">
+<link rel="alternate" hreflang="fr" href="https://kalistorik.com/fr.html">
+<link rel="alternate" hreflang="de" href="https://kalistorik.com/de.html">
+<link rel="alternate" hreflang="it" href="https://kalistorik.com/it.html">
+<link rel="alternate" hreflang="es" href="https://kalistorik.com/es.html">
+<link rel="alternate" hreflang="pt" href="https://kalistorik.com/pt.html">
+<link rel="alternate" hreflang="x-default" href="https://kalistorik.com/en.html">
 <meta name="description" content="KALIS TORIK — Chinese furniture sourcing partner. 100+ vetted factories, Beds, sofas, tables. Serving EU buyers since 2005.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://kalistorik.com">
+<link rel="canonical" href="https://kalistorik.com/en.html">
 <meta property="og:title" content="KALIS TORIK - Chinese Furniture Sourcing Partner">
 <meta property="og:description" content="KALIS TORIK connects European furniture buyers with 100+ vetted factories in China. Quotes on request. Beds, sofas, tables.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kalistorik.com">
+<meta property="og:url" content="https://kalistorik.com/en.html">
 <meta property="og:image" content="https://kalistorik.com/favicon-512.png">
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
@@ -828,7 +828,12 @@ article
     "contactType": "customer service",
     "availableLanguage": ["English","French","German","Italian","Spanish","Portuguese"]
   }],
-  "knowsAbout": ["Furniture Sourcing","B2B Trading","Supply Chain Management","Quality Inspection","Shipping"]
+  "knowsAbout": ["Furniture Sourcing","B2B Trading","Supply Chain Management","Quality Inspection","Shipping"],
+  "sameAs": [
+    "https://www.instagram.com/kalistorik/",
+    "https://www.facebook.com/kalistorik",
+    "https://www.linkedin.com/in/kalistorik"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -888,6 +893,10 @@ var labels={en:'English',fr:'Français',de:'Deutsch',it:'Italiano',es:'Español'
 document.getElementById('lang-btn').textContent=labels[lang]+' \u25be';
 document.querySelectorAll('[data-nav]').forEach(function(a){var k=a.getAttribute('data-nav');if(t[k])a.textContent=t[k];});
 try{localStorage.setItem('kalis-lang',lang);}catch(e){}
+// Update canonical + og:url + og:locale
+var c=document.querySelector('link[rel="canonical"]');if(c)c.href='https://kalistorik.com/'+lang+'/';
+var ou=document.querySelector('meta[property="og:url"]');if(ou)ou.setAttribute('content','https://kalistorik.com/'+lang+'/');
+var ol=document.querySelector('meta[property="og:locale"]');if(ol){var lm={en:'en_US',fr:'fr_FR',de:'de_DE',it:'it_IT',es:'es_ES',pt:'pt_PT'};if(lm[lang])ol.setAttribute('content',lm[lang]);}
 }
 // Picks section modal (3 photo cards on the homepage) — shared with /picks.html
 (function(){
@@ -1067,12 +1076,9 @@ document.getElementById('lang-btn').addEventListener('click',function(e){e.stopP
 document.querySelectorAll('#lang-dropdown button').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();setLang(b.getAttribute('data-lang'));document.getElementById('lang-dropdown').classList.remove('show');});});
 document.addEventListener('click',function(){document.getElementById('lang-dropdown').classList.remove('show');});
 var sl=null;try{sl=localStorage.getItem('kalis-lang');}catch(e){}
-// 优先 URL 参数 > hash > localStorage > 默认 en
+// Read language from URL path: /en/ /fr/ /de/ /it/ /es/ /pt/
 var urlLang=null;
-try{urlLang=new URLSearchParams(location.search).get('lang');}catch(e){}
-if(!urlLang && location.hash){
-  var m=location.hash.match(/lang=([a-z]{2})/i);if(m)urlLang=m[1];
-}
+try{var pm=location.pathname.match(/^\/(en|fr|de|it|es|pt)(\/|$)/);if(pm)urlLang=pm[1];}catch(e){}
 var supported=['en','fr','de','it','es','pt'];
 if(urlLang && supported.indexOf(urlLang)>=0) sl=urlLang;
 setLang(sl||'en');

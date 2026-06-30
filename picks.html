@@ -6,19 +6,19 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260624" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="canonical" href="https://kalistorik.com/picks.html" />
-  <link rel="alternate" hreflang="en" href="https://kalistorik.com/picks.html?lang=en" />
-  <link rel="alternate" hreflang="fr" href="https://kalistorik.com/picks.html?lang=fr" />
-  <link rel="alternate" hreflang="de" href="https://kalistorik.com/picks.html?lang=de" />
-  <link rel="alternate" hreflang="it" href="https://kalistorik.com/picks.html?lang=it" />
-  <link rel="alternate" hreflang="es" href="https://kalistorik.com/picks.html?lang=es" />
-  <link rel="alternate" hreflang="pt" href="https://kalistorik.com/picks.html?lang=pt" />
-  <link rel="alternate" hreflang="x-default" href="https://kalistorik.com/picks.html" />
+  <link rel="canonical" href="https://kalistorik.com/en/picks.html" />
+  <link rel="alternate" hreflang="en" href="https://kalistorik.com/en/picks.html" />
+  <link rel="alternate" hreflang="fr" href="https://kalistorik.com/fr/picks.html" />
+  <link rel="alternate" hreflang="de" href="https://kalistorik.com/de/picks.html" />
+  <link rel="alternate" hreflang="it" href="https://kalistorik.com/it/picks.html" />
+  <link rel="alternate" hreflang="es" href="https://kalistorik.com/es/picks.html" />
+  <link rel="alternate" hreflang="pt" href="https://kalistorik.com/pt/picks.html" />
+  <link rel="alternate" hreflang="x-default" href="https://kalistorik.com/en/picks.html" />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="KALIS TORIK Picks — Furniture Sourcing Deals & Market Alerts" />
   <meta property="og:description" content="Real sourcing stories, freight alerts, and factory picks. No fluff." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://kalistorik.com/picks.html" />
+  <meta property="og:url" content="https://kalistorik.com/en/picks.html" />
   <meta property="og:image" content="https://kalistorik.com/favicon-512.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="fr_FR" />
@@ -740,6 +740,11 @@ function setLang(lang) {
   document.title = t.picks_title || __LANGS__.en.picks_title;
   var metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.setAttribute('content', t.picks_desc || __LANGS__.en.picks_desc);
+
+  // Update canonical + og:url + og:locale
+  var c=document.querySelector('link[rel="canonical"]');if(c)c.href='https://kalistorik.com/'+lang+'/picks.html';
+  var ou=document.querySelector('meta[property="og:url"]');if(ou)ou.setAttribute('content','https://kalistorik.com/'+lang+'/picks.html');
+  var ol=document.querySelector('meta[property="og:locale"]');if(ol){var lm={en:'en_US',fr:'fr_FR',de:'de_DE',it:'it_IT',es:'es_ES',pt:'pt_PT'};if(lm[lang])ol.setAttribute('content',lm[lang]);}
 }
 </script>
 
@@ -1170,10 +1175,13 @@ function setLang(lang) {
     document.getElementById('lang-dropdown').classList.remove('show');
   });
 
-  // ── Init language from localStorage ──
+  // ── Init language: URL path > localStorage > default en
   var sl = null;
   try { sl = localStorage.getItem('kalis-lang'); } catch(e) {}
+  var urlLang = null;
+  try { var pm = location.pathname.match(/^\/(en|fr|de|it|es|pt)(\/|$)/); if(pm) urlLang = pm[1]; } catch(e) {}
   var supported = ['en','fr','de','it','es','pt'];
+  if (urlLang && supported.indexOf(urlLang) >= 0) sl = urlLang;
   if (sl && supported.indexOf(sl) >= 0) {
     setLang(sl);
   }
