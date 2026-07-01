@@ -1306,5 +1306,90 @@ setLang(sl||'en');
     }
   });
 })();</script>
+<script>/* ──────────────────────────────────────────────────────────────
+ * quality-modal + promo-drawer JS drivers
+ * Triggers: [data-modal="quality"] or href="#quality" → quality-modal
+ *           [data-drawer="promo"] or href="#promo"  → promo-drawer-overlay
+ * Close: backdrop click / close button / Esc
+ * ────────────────────────────────────────────────────────────── */
+(function () {
+  'use strict';
+
+  function setupOverlay(id, openClass) {
+    var overlay = document.getElementById(id);
+    if (!overlay) return;
+
+    var backdrop = overlay.querySelector('.' + id + '-backdrop') ||
+                   overlay.querySelector('[class*="backdrop"]');
+    var closeBtn = overlay.querySelector('[id$="-close"]') ||
+                   overlay.querySelector('[class*="close"]');
+
+    function open() {
+      overlay.classList.add(openClass);
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      overlay.classList.remove(openClass);
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // backdrop click → close
+    if (backdrop) backdrop.addEventListener('click', close);
+    // close button → close
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    // overlay click (not on content) → close
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) close();
+    });
+    // Esc → close
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains(openClass)) {
+        close();
+      }
+    });
+
+    return { open: open, close: close };
+  }
+
+  var qualityCtrl = setupOverlay('quality-modal', 'open');
+  var promoCtrl   = setupOverlay('promo-drawer-overlay', 'open');
+
+  // --- Wire triggers -------------------------------------------------
+  // [data-modal="quality"]
+  document.addEventListener('click', function (e) {
+    var trigger = e.target.closest('[data-modal="quality"]');
+    if (trigger && qualityCtrl) {
+      if (!e.target.closest('a, button')) {
+        e.preventDefault();
+        qualityCtrl.open();
+        return;
+      }
+    }
+  });
+
+  // [data-drawer="promo"]
+  document.addEventListener('click', function (e) {
+    var trigger = e.target.closest('[data-drawer="promo"]');
+    if (trigger && promoCtrl) {
+      if (!e.target.closest('a, button')) {
+        e.preventDefault();
+        promoCtrl.open();
+        return;
+      }
+    }
+  });
+
+  // href="#quality" / href="#promo" on anchor clicks
+  document.addEventListener('click', function (e) {
+    var anchor = e.target.closest('a[href="#quality"], a[href="#promo"]');
+    if (!anchor) return;
+    e.preventDefault();
+    if (anchor.getAttribute('href') === '#quality' && qualityCtrl) qualityCtrl.open();
+    if (anchor.getAttribute('href') === '#promo'  && promoCtrl)  promoCtrl.open();
+  });
+})();</script>
 </body>
 </html>
