@@ -1,0 +1,6 @@
+# Prevent CF CDN from caching HTML (ensure latest JS is served)
+/*.html
+  Cache-Control: no-cache, must-revalidate
+# Cache images aggressively (they rarely change)
+/images/*
+  Cache-Control: public, max-age=604800

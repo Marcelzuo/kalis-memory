@@ -1,0 +1,7 @@
+https://kalistorik.pages.dev/* https://kalistorik.com/:splat 301
+/en.html /?lang=en 301
+/fr.html /?lang=fr 301
+/de.html /?lang=de 301
+/it.html /?lang=it 301
+/es.html /?lang=es 301
+/pt.html /?lang=pt 301
