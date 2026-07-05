@@ -75,7 +75,7 @@
 | Facebook / LinkedIn / Instagram 链接 | ✅ | 首页 footer |
 | Schema JSON-LD | ✅ | Organization + Product |
 | 图片文字六语化 | ✅ | picks 板块图、Why Us 图 |
-| sitemap.xml | 🔴 P0 | 待修：3死链 + 缺 picks.html |
+| sitemap.xml | ✅ 完成 | 12 URL 全 200，7/2 GSC 已提交 |
 | robots.txt | 🟢 P2 | 待决定 Google-Extended |
 
 ---
@@ -388,7 +388,7 @@ KALIS 解法（1段）→ 不用"We"，用"Here's what works"
 
 | 优先级 | 项目 | 动作 |
 |--------|------|------|
-| 🔴 P0 | sitemap 修复 | 删死链 + 加 picks.html → 提交 GSC |
+| ✅ 完成 | sitemap 提交 | 12 URL 全 200，7/2 GSC 提交成功 |
 | 🟡 P1 | robots.txt | 决定 Google-Extended |
 | 🟢 P2 | 内链策略 | Quality/Freight/Factories 三页互链 |
 | 🟢 P3 | LinkedIn 帖索引 | 每帖 = 一条外链指向 kalistorik.com |
@@ -607,7 +607,7 @@ IG 登录凭证 **已用完即焚**，不写入任何文件。Chrome LinkedIn �
 |------|:--:|------|------|------|:--:|
 | 周三 | 3 | LI 个人 | Why the cheapest… | 纯文字 | ✅ 已发 |
 | 周四 | 1 | IG Reels | 供应商图 vs 实拍对比 | 剪映剪辑 | ⬜ |
-| 周四 | 2 | IG Story | 工厂大门+一行字 | 实拍照片 | ⬜ |
+| 周四 | 2 | IG Story | 工厂大门+一行字 | 实拍照片 | ✅ 7/2已发 |
 | 周五 | 4 | IG Carousel | margin 3个隐藏泄漏点 | 3张实拍图 | ⬜ |
 | 周五 | 6 | IG Reels | QC区翻看拒收品 | 剪映剪辑 | ⬜ |
 | 周六 | 7 | FB Page | 工厂日常实拍 | 实拍照片 | ⬜ |
@@ -625,6 +625,9 @@ IG 登录凭证 **已用完即焚**，不写入任何文件。Chrome LinkedIn �
 | 6/27 | IG Reel | v5 "We see what you can't" | ✅ |
 | 6/27 | FB | "That call we make…" 图+文 | ✅ |
 | 6/28 | — | 品牌片 "The Line" 完成 | 🟡 待发 |
+| 7/02 | IG Story | 工厂大门实拍 + 一行字 | ✅ |
+| 7/03 | IG | "Your factory sent QC photos? Ours are taken by our own team." | ✅ |
+| 7/03 | LinkedIn | "Most sourcing problems don't come from bad factories" | ✅ |
 
 ---
 
@@ -646,7 +649,6 @@ IG 登录凭证 **已用完即焚**，不写入任何文件。Chrome LinkedIn �
 
 | 优先 | 项目 | 动作 |
 |:--:|------|------|
-| 🔴 | sitemap.xml | 删死链+加picks→提交GSC |
 | 🔴 | robots.txt | 老板拍板 Google-Extended |
 | 🟡 | UTM 全量 | 所有社媒链接统一UTM |
 | 🟡 | 内链 | 3功能页互链 |
@@ -712,9 +714,8 @@ IG 登录凭证 **已用完即焚**，不写入任何文件。Chrome LinkedIn �
 2. 🟡 品牌片何时发IG？
 3. 🟡 W2选题：验厂揭秘 / 货运真相 / 客户痛点？
 4. 🟡 Our Picks第一个轮换何时？
-5. 🔴 sitemap修复后立即提交GSC？
 
-> V10 · 2026-07-05 · 合并 V7.1+V9 · 米迦勒 · 唯一基准
+> V10.1 · 2026-07-05 · 同步工作日志，修正过时条目 · 米迦勒 · 唯一基准
 
 ---
 
