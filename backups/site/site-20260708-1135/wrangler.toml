@@ -1,0 +1,10 @@
+# Kalistorik Cloudflare Pages 配置
+name = "kalistorik"
+compatibility_date = "2025-06-24"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "."
+
+[env.production]
+compatibility_date = "2025-06-24"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "."

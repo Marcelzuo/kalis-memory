@@ -1,0 +1,17 @@
+name: Deploy to CF Pages
+on:
+  push:
+    branches: [master]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+        working-directory: functions
+      - run: npx wrangler@latest pages deploy . --project-name=kalistorik --branch=master
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: bd85d282f224fc36aac152d7f72cfb2d
