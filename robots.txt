@@ -4,4 +4,4 @@ Allow: /
 User-agent: Google-Extended
 Disallow: /
 
-Sitemap: https://kalistorik.pages.dev/sitemap.xml
+Sitemap: https://kalistorik.com/sitemap.xml

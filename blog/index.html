@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260612">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=20260612"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=20260612"><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260624">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="manifest" href="/site.webmanifest">
+<title>Blog — KALIS TORIK</title>
+<link rel="canonical" href="https://kalistorik.com/blog">
+<meta name="description" content="KALIS TORIK Blog — Insights on Chinese furniture sourcing, factory QC, and import strategy.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Blog — KALIS TORIK">
+<meta property="og:description" content="Insights on Chinese furniture sourcing, factory QC, and import strategy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kalistorik.com/blog">
+<meta property="og:image" content="https://kalistorik.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-ash: #888888;
+  --color-gold: #C9A96E;
+  --color-linen: #F5F0EA;
+  --color-border: #E9E4DC;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-inter);font-weight:300;color:var(--color-black);background:var(--color-white);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-montserrat);font-weight:300;text-transform:uppercase;letter-spacing:0.08em}
+a{color:var(--color-gold);text-decoration:none;transition:color 0.3s}
+a:hover{color:var(--color-black)}
+img{display:block;max-width:100%}
+.container{max-width:1280px;margin:0 auto;padding:0 2rem}
+@media(max-width:768px){.container{padding:0 1.25rem}}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,0,0,0.85);backdrop-filter:blur(12px);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-montserrat);font-size:1.25rem;font-weight:300;color:var(--color-white);letter-spacing:0.12em;white-space:nowrap}
+.nav-logo span{color:var(--color-gold)}
+.nav-links{display:flex;gap:2rem;align-items:center;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.7);font-size:0.8rem;font-family:var(--font-montserrat);text-transform:uppercase;letter-spacing:0.06em;font-weight:400}
+.nav-links a:hover{color:var(--color-gold)}
+.nav-social{display:flex;align-items:center;gap:.85rem;margin-left:1rem}
+.nav-social-icon{color:rgba(255,255,255,0.7);transition:color .3s;display:flex;align-items:center;justify-content:center}
+.nav-social-icon:hover{color:var(--color-gold)}
+.mobile-menu-btn{display:none;background:none;border:none;color:var(--color-white);font-size:1.5rem;cursor:pointer;padding:0.5rem}
+@media(max-width:992px){.nav-links{display:none}.mobile-menu-btn{display:block}}
+@media(max-width:768px){.nav-social{gap:.5rem;margin-left:.5rem}.nav-social-icon svg{width:14px;height:14px}}
+
+/* Blog Hero */
+.blog-hero{padding:10rem 2rem 6rem;background:var(--color-black);text-align:center}
+.blog-hero-label{font-family:var(--font-montserrat);font-size:0.7rem;color:var(--color-gold);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:1rem}
+.blog-hero-title{font-family:var(--font-montserrat);font-size:3rem;font-weight:200;color:var(--color-white);letter-spacing:0.06em;text-transform:uppercase}
+.blog-hero-sub{font-size:1.05rem;color:var(--color-ash);margin-top:1.25rem;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.7}
+@media(max-width:768px){.blog-hero{padding:7rem 1.25rem 4rem}.blog-hero-title{font-size:2rem}}
+
+/* Blog Grid */
+.blog-section{padding:5rem 2rem}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.blog-card{background:var(--color-white);border:1px solid var(--color-border);border-radius:4px;overflow:hidden;transition:all 0.3s}
+.blog-card:hover{box-shadow:0 8px 40px rgba(0,0,0,0.08);transform:translateY(-2px)}
+.blog-card-img{aspect-ratio:16/10;background:var(--color-linen);display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+.blog-card-body{padding:1.5rem}
+.blog-card-date{font-family:var(--font-montserrat);font-size:0.7rem;color:var(--color-gold);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem}
+.blog-card-title{font-family:var(--font-montserrat);font-size:1.1rem;font-weight:400;letter-spacing:0.04em;line-height:1.4;margin-bottom:0.75rem}
+.blog-card-title a{color:var(--color-black)}
+.blog-card-title a:hover{color:var(--color-gold)}
+.blog-card-excerpt{font-size:0.9rem;color:var(--color-ash);line-height:1.65;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.blog-card-tag{display:inline-block;padding:0.2rem 0.6rem;background:var(--color-linen);font-size:0.7rem;color:var(--color-ash);border-radius:2px;margin-top:1rem;text-transform:uppercase;letter-spacing:0.05em}
+@media(max-width:992px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr}}
+
+/* Footer */
+.footer{background:var(--color-black);color:var(--color-ash);padding:3rem 2rem;text-align:center}
+.footer-logo{margin-bottom:1rem}
+.footer-logo .logo-kalis{color:var(--color-white);font-family:var(--font-montserrat);font-weight:300;font-size:1.5rem;letter-spacing:12px}
+.footer-logo .logo-torik{color:var(--color-ash);font-family:var(--font-montserrat);font-weight:200;font-size:0.7rem;letter-spacing:8px;display:block}
+.footer-logo .logo-line{width:24px;height:1px;background:var(--color-gold);margin:0 auto 8px}
+.footer-text{font-size:0.85rem;margin-bottom:0.25rem}
+.footer-family{font-size:0.75rem;color:var(--color-ash)}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo">KALIS <span>TORIK</span></a>
+    <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/picks.html">Picks</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://wa.me/+8613602222361" target="_blank" rel="noopener" aria-label="WhatsApp" class="nav-social-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 01-4.11-1.137l-.293-.174-3.07.913.913-3.07-.174-.293A7.96 7.96 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/kalistorik/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/kalistorik" target="_blank" rel="noopener" aria-label="Facebook" class="nav-social-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="blog-hero">
+  <div class="blog-hero-label">Insights</div>
+  <h1 class="blog-hero-title">Blog</h1>
+  <p class="blog-hero-sub">Real stories from the factory floor. Lessons learned sourcing furniture in China so you can avoid the same mistakes.</p>
+</section>
+
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-card-img">🛋️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-date">July 10, 2026</div>
+          <h2 class="blog-card-title"><a href="/blog/first-post.html">When Your Factory QC Photos Don't Tell the Full Story</a></h2>
+          <p class="blog-card-excerpt">Factory QC photos look flawless on WhatsApp. But what happens when the container arrives and reality doesn't match the pictures? A real case study from our sourcing floor.</p>
+          <span class="blog-card-tag">Quality Control</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <div class="logo-line"></div>
+    <div class="logo-kalis">KALIS</div>
+    <div class="logo-torik">TORIK</div>
+  </div>
+  <p class="footer-text">Your China Sourcing Partner</p>
+  <p class="footer-family">A KALIS Group Brand · Furniture & Apparel</p>
+</footer>
+
+</body>
+</html>
