@@ -151,6 +151,16 @@ img{display:block;max-width:100%}
 @media(max-width:992px){.how-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:576px){.how-steps{grid-template-columns:1fr}}
 
+/* ── FAQ ── */
+.faq-list{max-width:800px;margin:3rem auto 0;text-align:left}
+.faq-item{border-bottom:1px solid var(--color-border)}
+.faq-item summary{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;font-family:var(--font-montserrat);font-size:0.95rem;font-weight:400;letter-spacing:0.04em;cursor:pointer;color:var(--color-black);transition:color 0.3s;list-style:none;outline:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.2rem;color:var(--color-gold);transition:transform 0.3s;flex-shrink:0;margin-left:1rem}
+.faq-item[open] summary::after{content:'\2212'}
+.faq-item summary:hover{color:var(--color-gold)}
+.faq-item .faq-answer{padding:0 0 1.25rem;font-size:0.9rem;line-height:1.75;color:var(--color-ash)}
+
 /* ── Products ── */
 .products-tabs{display:flex;justify-content:center;gap:0;margin-bottom:3rem}
 .products-tab{padding:0.75rem 2rem;background:none;border:none;border-bottom:1px solid var(--color-border);font-family:var(--font-montserrat);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;cursor:pointer;color:var(--color-ash);transition:all 0.3s}
@@ -415,7 +425,8 @@ img{display:block;max-width:100%}
       <li><a href="#products" data-nav="nav_products">Products</a></li>
       <li><a href="#why" data-nav="nav_why">Why Us</a></li>
       <li><a href="#how" data-nav="nav_how">How It Works</a></li>
-      <li><a href="#contact" data-nav="nav_contact">Contact</a></li>
+      <li><a href="#faq" data-nav="nav_faq">FAQ</a></li>
+	      <li><a href="#contact" data-nav="nav_contact">Contact</a></li>
       <li class="lang-switch">
         <button class="lang-btn" id="lang-btn" aria-label="Language">EN ▾</button>
         <ul class="lang-dropdown" id="lang-dropdown">
@@ -539,6 +550,15 @@ img{display:block;max-width:100%}
       <div class="how-step"><div class="how-step-num">03</div><h3 data-i18n="how_step3_title">Quality Check</h3><p data-i18n="how_step3_desc">Photos and video of your order. You approve before the balance is due.</p></div>
       <div class="how-step"><div class="how-step-num">04</div><h3 data-i18n="how_step4_title">Sea Freight to You</h3><p data-i18n="how_step4_desc">To any major European port. Full logistics, clear pricing, no hidden costs.</p></div>
     </div>
+  </div>
+</section>
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title" data-i18n="faq_title">FAQ</h2>
+  </div>
+  <div class="container">
+    <div class="faq-list" id="faq-list"></div>
   </div>
 </section>
 <!-- Testimonials -->
@@ -847,6 +867,7 @@ try{localStorage.setItem('kalis-lang',lang);}catch(e){}
 var c=document.querySelector('link[rel="canonical"]');if(c)c.href='https://kalistorik.com/'+lang;
 var ou=document.querySelector('meta[property="og:url"]');if(ou)ou.setAttribute('content','https://kalistorik.com/'+lang);
 var ol=document.querySelector('meta[property="og:locale"]');if(ol){var lm={en:'en_US',fr:'fr_FR',de:'de_DE',it:'it_IT',es:'es_ES',pt:'pt_PT'};if(lm[lang])ol.setAttribute('content',lm[lang]);}
+var faqList=document.getElementById('faq-list');if(faqList){var faqHTML='';for(var i=1;i<=6;i++){var q=t['faq_q'+i];var a=t['faq_a'+i];if(q&&a){faqHTML+='<details class="faq-item"><summary>'+__esc__(q)+'</summary><div class="faq-answer">'+__esc__(a)+'</div></details>';}}faqList.innerHTML=faqHTML;}
 }
 // Picks section modal (3 photo cards on the homepage) — shared with /picks.html
 (function(){
