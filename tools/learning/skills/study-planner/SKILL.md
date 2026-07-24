@@ -3,7 +3,7 @@ name: study-planner
 description: >
   初中学习计划制定。当用户提到"学习计划""复习计划""考试安排""时间表""错题复习"时触发。
   扫描错题库，分析薄弱环节，生成个性化复习计划。
-model: deepseek-v3
+model: deepseek-r1
 ---
 
 # 初中学习计划智能制定

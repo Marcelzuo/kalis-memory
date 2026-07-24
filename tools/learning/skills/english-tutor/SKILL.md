@@ -3,7 +3,7 @@ name: english-tutor
 description: >
   初中英语辅导。当用户提到"英语""单词""语法""完形填空""阅读理解""英语作文""翻译"时触发。
   使用通义千问 Max 模型，兼顾中英双语能力。
-model: qwen-max
+model: deepseek-r1
 ---
 
 # 初中英语智能辅导

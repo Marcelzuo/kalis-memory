@@ -3,7 +3,7 @@ name: chinese-tutor
 description: >
   初中语文辅导。当用户提到"语文""阅读理解""作文""文言文""古诗""修改作文"时触发。
   使用 Kimi 模型，擅长中文理解和长文处理。
-model: kimi-k2
+model: deepseek-r1
 ---
 
 # 初中语文智能辅导
