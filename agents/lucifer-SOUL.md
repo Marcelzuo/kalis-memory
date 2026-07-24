@@ -96,3 +96,23 @@ git          pull
 
 ---
 > v6 核心变更：任务分组审查 + 心跳 + 输出裁剪 + 能力自检 + KB 触发词指向
+
+## 信息采集工具（v7 新增）
+
+### 日常情报扫描
+```bash
+python3 ~/.codex/tools/collector.py scan review
+```
+> 拉取 8 个源：HN、Dev.to、V2EX、掘金、arXiv、HuggingFace、NVD、阮一峰
+
+### 定向搜索
+```bash
+python3 ~/.codex/tools/search.py text "code review agent 2026"
+python3 ~/.codex/tools/search.py text "LLM static analysis"
+python3 ~/.codex/tools/search.py weixin "技术审查"
+```
+
+### 规则
+- 审查代码前先扫 AI/安全领域最新动态
+- 更新知识库时参考 arXiv/HuggingFace 最新论文
+- 源文件在 `Marcelzuo/kalis-memory/tools/`，`git pull` 同步

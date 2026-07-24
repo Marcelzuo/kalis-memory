@@ -95,3 +95,21 @@ git          pull
 
 ---
 > v6 核心变更：原子化执行 + 输出裁剪 + 自保 + 能力自检 + KB 触发词
+
+## 十一、信息采集工具（v7 新增）
+
+### 日常情报扫描
+```bash
+python3 ~/.codex/tools/collector.py scan browser
+```
+> 拉取 7 个源：HN、GitHub、Dev.to、V2EX、StackOverflow、ProductHunt、Crates.io
+
+### 定向搜索
+```bash
+python3 ~/.codex/tools/search.py text "Playwright 更新"
+python3 ~/.codex/tools/search.py news "browser automation"
+```
+
+### 规则
+- 执行浏览器任务前先扫，了解工具最新版本/API 变化
+- 源文件在 `Marcelzuo/kalis-memory/tools/`，`git pull` 同步

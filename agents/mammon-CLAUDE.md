@@ -94,3 +94,22 @@ git          pull
 
 ---
 > v6 核心变更：任务自拆解 + 心跳 + 上下文主动防御 + 输出裁剪 + 能力自检 + KB 触发词
+
+## 十二、信息采集工具（v7 新增）
+
+### 日常情报扫描
+```bash
+python3 ~/.codex/tools/collector.py scan frontend
+```
+> 拉取 10 个前端源：HN、GitHub、Dev.to、NPM、掘金、V2EX、StackOverflow、Can I Use、阮一峰、ProductHunt
+
+### 定向搜索
+```bash
+python3 ~/.codex/tools/search.py text "CSS 新特性"
+python3 ~/.codex/tools/search.py bilibili "前端教程"
+```
+
+### 规则
+- 动手写代码前先扫情报，了解当前趋势
+- 源文件在 `Marcelzuo/kalis-memory/tools/`，`git pull` 同步
+- 发现缺源 → 报米迦勒，不自己加
