@@ -1,0 +1,58 @@
+{
+  "_说明": "WorkBuddy 模型配置。放在 ~/.workbuddy/models.json。国内模型，数学优先。",
+  "models": [
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek R1 · 数学专用",
+      "vendor": "OpenAI",
+      "url": "https://api.deepseek.com/v1/chat/completions",
+      "apiKey": "你的DeepSeek_API_Key",
+      "maxInputTokens": 64000,
+      "maxOutputTokens": 8192,
+      "_用途": "数学解题、推理分析。R1 有 chain-of-thought，数学准确率国内最高"
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3 · 通用",
+      "vendor": "OpenAI",
+      "url": "https://api.deepseek.com/v1/chat/completions",
+      "apiKey": "你的DeepSeek_API_Key",
+      "maxInputTokens": 64000,
+      "maxOutputTokens": 8192,
+      "_用途": "通用问答、学习计划、语文英语"
+    },
+    {
+      "id": "kimi-k2",
+      "name": "Kimi K2.7 · 中文",
+      "vendor": "OpenAI",
+      "url": "https://api.moonshot.cn/v1/chat/completions",
+      "apiKey": "你的Kimi_API_Key",
+      "maxInputTokens": 128000,
+      "maxOutputTokens": 8192,
+      "_用途": "语文阅读理解、作文批改、长篇内容"
+    },
+    {
+      "id": "qwen-max",
+      "name": "通义千问 Max · 全能",
+      "vendor": "OpenAI",
+      "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "apiKey": "你的通义千问_API_Key",
+      "maxInputTokens": 32000,
+      "maxOutputTokens": 8192,
+      "_用途": "英语辅导、全科辅助、知识问答"
+    }
+  ],
+  "availableModels": ["deepseek-r1", "deepseek-v3", "kimi-k2", "qwen-max"],
+  "modelByTask": {
+    "math": "deepseek-r1",
+    "chinese": "kimi-k2",
+    "english": "qwen-max",
+    "study_plan": "deepseek-v3",
+    "general": "deepseek-v3"
+  },
+  "_API获取": {
+    "DeepSeek": "https://platform.deepseek.com → 注册即送额度，R1 ¥1/百万token",
+    "Kimi": "https://platform.moonshot.cn → 注册即送额度",
+    "通义千问": "https://dashscope.aliyun.com → 百万token免费额度"
+  }
+}
