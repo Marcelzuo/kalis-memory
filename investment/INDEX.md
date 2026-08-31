@@ -15,7 +15,7 @@
 | 留存/归档/清理/每日整理 | `RETENTION.md` |
 | 今日午间复盘/上午对账/午后预测 | `analysis/2026-08-28-midday-review.md` |
 | 今日盘前决议/三情景/买不买/什么价买 | `analysis/2026-08-31-preopen.md` |
-| 今日收盘复盘/四兄弟比对/终审 | `analysis/2026-08-28-close-review.md` |
+| 今日收盘复盘/四兄弟比对/终审 | `analysis/2026-08-31-close-review.md` |
 | 2026-08-28 终版推荐（排名/资金/买点/大盘区间/赔率/事件） | `analysis/2026-08-28-final-recommendation.md` |
 | 中国市场特点/政策市/热点市 | `strategies/market/china-policy-hotspot.md` |
 | ETF 长期组合与收益测算 | `strategies/etf/2026-08-25-etf-strategy.md` |
