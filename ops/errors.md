@@ -1,6 +1,6 @@
 # ⛔ 错误库
 
-> 永久记录。每次犯错立即追加，四人共享只读。目的：同类错误不犯第二次。
+> 永久记录。每次犯错立即追加，三人共享只读。目的：同类错误不犯第二次。
 
 ---
 
@@ -14,8 +14,10 @@
 | 兄弟 | 引擎 | 调用方式 |
 |------|------|----------|
 | 玛门 | Claude Code | `claude -p "任务"` |
-| 撒旦 | **OpenClaw** | `openclaw agent --local --message "任务"` |
-| 路西法 | **Hermes** | `hermes -z "任务"` |
+| 路西法 | Hermes | `hermes -z "任务"` |
+| 米迦勒 | Codex | `codex` CLI |
+
+> 2026-08-31 起撒旦（OpenClaw）已退出，不再调度。
 
 **教训：** 三人三种引擎，不可混淆。调度前查 `team.md`，不凭记忆。
 
@@ -77,10 +79,10 @@
 | 兄弟 | 调用 | 领地 |
 |------|------|------|
 | 玛门 | `claude -p "任务" --allowedTools "Bash(*) Edit Read"` | HTML/CSS/JS·素材·图片·视频·代码 |
-| 撒旦 | `openclaw agent --local --agent main --message "任务"` | 浏览器·GUI·截图·抓取 |
-| 路西法 | `hermes -z "任务"` | 文案·审查·知识库·规则 |
+| 路西法 | `hermes -z "任务"` | 文案·审查·知识库·规则·SEO 外推广 |
+| 米迦勒 | `codex` CLI | 规划·分派·终审·KB·部署·浏览器/截图/GUI |
 
-**教训：** 分派前先 `which claude/openclaw/hermes` 确认，再查 `team.md` 决定派谁。文案归路西法，米迦勒不碰文案只终审。
+**教训：** 分派前先 `which claude hermes` 确认，再查 `team.md` 决定派谁。文案归路西法，米迦勒不碰文案只终审。
 
 ### 2. 联网核验走错通道 + 死磕
 
@@ -136,18 +138,132 @@
 
 **错误：** 四兄弟分析时又连调 3 次 `spawn_agent`，收到 `unsupported call` 后反复对老板说“兄弟派工接口不可用”，而不是走正确通道。
 
-**事实：** 本环境没有 `spawn_agent`。正确调度走三条 CLI（先 `which claude openclaw hermes`，再查 `ops/team.md`）：
+**事实：** 本环境没有 `spawn_agent`。正确调度走两条 CLI（先 `which claude hermes`，再查 `ops/team.md`）：
 
 | 兄弟 | 调用 |
 |------|------|
 | 玛门 | `claude -p "任务" --allowedTools "Bash(*) Edit Read"` |
-| 撒旦 | `openclaw agent --local --agent main --message "任务"` |
 | 路西法 | `hermes -z "任务"` |
 
-**教训：** 不可用时直接走 CLI；CLI 也不可用就本线程按四兄弟口径分析并注明，禁止拿“接口不可用”当理由反复空转。
+**教训：** 不可用时直接走 CLI；CLI 也不可用就本线程按三兄弟口径分析并注明，禁止拿“接口不可用”当理由反复空转。
 
 ### 2. 联网死磕 + 全量读文件（省 token）
 
 **错误：** DDG / Bing / MDPI / arXiv / SemanticScholar 各重试多遍；用 `cat` 整读大文件；拉 30 行全量资金榜、全量 `ps aux`。
 
 **教训：** 失败源一次即停换通道；读文件先 `head`/`rg` 定位再精读；行情只取需要的列和行；已写盘文件不重复 `cat`；不重复试同一失败通道。
+
+## 2026-09-01
+- 错误：派工用了 spawn_agent，失败后未先 `which claude hermes` 查 CLI，导致米迦勒代做玛门/路西法的分析，违反“不代兄弟工作”红线。
+- 教训：派工固定走 `claude`（玛门）/ `hermes`（路西法）两条 CLI，永不 spawn_agent；派工前先 `which` 一次，CLI 可用时绝不代做。
+
+## 2026-09-01 收盘选股 · 兄弟数据不通（根因已定位）
+
+### 现象
+- 玛门（claude）回“拿不到今天真实收盘数据”，拒绝编数据；路西法（hermes）在 code_execution 里卡死，被米迦勒终止；最终只有米迦勒出内容。
+
+### 根因（已实测）
+- 不是 CLI 不可用：`claude` 和 `hermes` 都能 `which opencli`，PATH 里都有 `/Users/zuo/.npm-global/bin`，`opencli --version` 均返回 1.8.6。
+- 是**派工指令没带数据通道**：任务里只写了“全市场自行选3只”，没说行情从哪取，兄弟默认去 WebSearch/代码抓取 → 玛门查不到、路西法卡死。
+
+### 一次修复（写进派工模板）
+- 投资选股/复盘派工，任务内必须附一句数据通道，不喂数据、只给工具入口：
+  - 行情：`opencli eastmoney quote <代码逗号分隔> -f json`
+  - K线/均线：`opencli eastmoney kline <代码> --period day --limit 120 -f json`
+  - 板块：`opencli eastmoney sectors`；资金：`opencli eastmoney money-flow`
+  - 实时指数：新浪 `hq.sinajs.cn`（带 Referer `https://finance.sina.com.cn/`）
+  - 先读：`~/.codex/kb/ops/web-search.md`、`~/.codex/kb/investment/data/research/sources.md`
+- 路西法（hermes）额外要求：单个数据命令设 30 秒超时，失败即换源，禁止让 code_execution 无限等待。
+- 若某源 fetch failed/other side closed：同一源只试 1 次，换新浪或东财备用；仍不通才回报米迦勒，不在同一通道死磕。
+
+## 2026-09-03 · 米迦勒（联网卡死根因）
+
+**错误：** 派玛门/路西法做 A股数据时，玛门自己写 `curl` 直连东财 `push2his.eastmoney.com` K线接口，接口返回 0 字节，玛门陷入 `sleep 12 × 5 次` 重试循环，四只票拖成十几分钟无输出，被老板判定“卡死”。
+
+**根因（不是网络慢，是通道选错）：**
+- 东财 K线接口 `push2his.eastmoney.com/api/qt/stock/kline/get` 当前已断（curl 与 opencli 的 kline 命令均 `fetch failed / other side closed`，返回空）。
+- 可用的东财接口只有：`quote`、`money-flow`、`sectors`（走 push2.eastmoney.com）。
+- 日K替代通道：新浪 `quotes.sina.cn/cn/api/jsonp_v2.php/...getKLineData`（symbol=sz/sh+代码，scale=240 日线，datalen=120 可拿120根，已验证）。
+
+**教训：**
+1. 派兄弟做行情任务，必须明示“K线走新浪，禁止 push2his”，并给死命令“curl 一律 --max-time 10、禁止 sleep 重试循环”。
+2. 派工后不能只看进程存活，要查子进程在跑什么命令；看到 `sleep N` 重试循环就是卡死前兆，直接 kill 重派。
+3. 已验证可用通道要写进 `ops/web-search.md`，不再每次重测。
+
+
+## 2026-09-03 · 米迦勒（策略输出反复出错 · 四项）
+
+**错误现象：** 一天内买卖策略反复改、前后矛盾，被老板质疑“按你说的涨不能买跌不能买、数据说改就改”。
+
+**四项具体错误与根因：**
+1. **止盈价写错**：把兄弟的阶段目标 15.0 当最终止盈，未按铁律 14.55×1.10=16.00 复算。
+2. **大盘一刀切**：写“上证<MA5 不开新仓”，与既有分级规则冲突，也未回答“大盘跌个股被拉低是否更好买”。
+3. **尾盘 14:50 唯一买点**：把兜底确认窗口写成硬规定，一天交易只盯最后10分钟不合理。
+4. **结论漏条件**：给结论时漏了大盘中间档 → 半仓这一关键条件。
+
+**根因（统一）：** 终审时直接搬运兄弟的过程稿/旧规则，没有按“买入价−5%/+10%铁律 + 大盘三档 + 买入时机”三条主线自己复算一遍，也没有在给结论前自检“大盘档位+个股触发+仓位+止损+止盈”五项是否齐全。
+
+**防再犯（写死）：**
+- 给任何买卖结论前，五项自检：大盘档位 / 个股触发价 / 仓位 / 止损价 / 止盈价，缺一不给结论。
+- 止损止盈只认买入价 −5% / +10%，兄弟目标价仅参考，终审必须复算。
+- 大盘三档固定：≥MA5 满仓、MA20~MA5 半仓低吸、<MA20 只卖不买。
+- 买入时机：盘中触发即时买，尾盘仅兜底。
+
+## 2026-09-03 · 米迦勒（素材通道 + 模型档位 · 两项）
+
+**错误 1：同一 403 源重复试**
+- 现象：Pexels 搜索页 curl 返回 403，又分别用代理/无代理/带 UA 重复试了 3 次，浪费时间与 token。
+- 根因：没有在第一次 403 就停手换源；且当时缺少分类化的素材通道库。
+- 教训：同一源失败 1 次即换；素材/数据通道先查 `ops/sources.md`，不再凭感觉乱试。
+
+**错误 2：简单任务走了 Pro**
+- 现象：派玛门做「找图+剪片」这类机械任务时，`claude -p` 默认走 deepseek-v4-pro，进程长期 0 子进程、CPU 1.8%，拖 5–10 分钟无产出。
+- 根因：settings.json 把 haiku/opus/sonnet/small-fast 全路由到 deepseek-v4-pro，简单任务没显式降档。
+- 教训：按任务难度选档——简单/机械走 `--model deepseek-v4-flash`；深度/创作/终审才走 Pro。已写进 `ops/team.md` 任务分级路由。
+
+## 2026-09-07 · 米迦勒
+
+### 黑底 Logo 尾页反复用错资产 / 成片丢 Logo
+
+**错误：** IG Reel 尾页要求纯黑背景 + Logo；先用 `logo-kalis-torik-light.svg`（浅底深字）贴到黑底，几乎看不见；之后用 `logo-kalis-torik-dark.svg` 虽能显示，但成片里的 seg6 仍是旧空帧，最后桌面成片尾帧没有 Logo。
+
+**正确做法：**
+- 纯黑底 `#000000`
+- Logo 只用真实资产：深底用 `~/Desktop/家具/品牌素材/logo-kalis-torik-dark.svg`
+- 该 SVG 自带 `#1c1c1c` 背景，若要求纯黑底，必须去掉 SVG 内背景层后再贴，不能让 `#1c1c1c` 方块露出来
+- `-light.svg` 只用于浅底；透明 `logo-kalis-torik-512.png` 是黑字透明底，不能用于黑底
+
+**教训：**
+- 尾页终审 = 抽桌面成片最后一帧，确认中央有清晰的浅色 `KALIS` + 金色 `TORIK`，不是只看 render6.png
+- 改完单帧必须重新生成对应 seg 并重新 concat，禁止只改 render 图不重出成片
+- 老板要求“自己审核了没问题再发”，发前先跑一遍自动像素核验
+
+## 2026-09-07 · 米迦勒（追加）
+
+### Logo 尾页多出菱形金点
+
+**错误：** 黑底尾页使用的 Logo 多出一个菱形金点。老板指出 VI 里没有这个点。
+
+**事实：** `~/Desktop/家具/KALIS品牌VI手册_完整版.pdf` 第 2 页定义：主标识 = `KALIS` + `TORIK`/`SELIA`；上方只有 1px 冠线，是唯一装饰元素，无菱形金标。
+
+**修正：**
+- 已从 `logo-kalis-torik-dark.svg` / `logo-kalis-torik-light.svg` 删除菱形金标，只保留冠线。
+- `~/.codex/kb/kalistorik/brand.md` 原有红线已写明“logo 带菱形金标禁止”，后续所有贴 logo 必须复检：只有横线，无点。
+
+## 2026-09-07 · 米迦勒（视频终审追加）
+
+### 1. 音乐侵权风险
+- **错误：** 使用 Incompetech / Serene 等需署名或受 Content ID 限制的曲目，部分地区/平台不能播放。
+- **修复：** 改为 CC0 公版音乐；本次用 `MorningDue_Piano_CC0.mp3`（Bigvegie / Freesound，CC0 1.0，无需署名）。
+- **规则：** 社媒视频音乐只允许 CC0 或已确认可商用的平台音源；下载后必须留 `_LICENSE.txt`。
+
+### 2. IG Reels 文字在安全区外
+- **错误：** 画面文字统一放 `bottom:190px`，落在 Reels 底部 35% UI 区（字幕/音频行）和两侧裁剪范围内，网页/手机端显示不全。
+- **正确尺寸（联网核实）：**
+  - 画布：1080×1920（9:16）
+  - 顶部安全区：14%，约 269px
+  - 底部安全区：35%，约 672px
+  - 左右安全区：各 6%，约 65px
+  - 文字安全框：`top≥269px`、`bottom≥672px`、`left/right≥65px`
+- **本次修复：** 所有文字层改到 `bottom:720px`，并已自动核验文字 bbox 在安全框内。
+- **规则：** 以后 IG Reels 所有文字/Logo 必须先落安全框；出片后抽帧自检，不能只查画布尺寸。
