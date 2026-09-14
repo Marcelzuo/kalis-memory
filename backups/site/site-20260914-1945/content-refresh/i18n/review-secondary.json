@@ -1,0 +1,74 @@
+{
+  "picks_meta_desc": {
+    "en": "Who really watches your order on the factory floor, what independent inspection checks, and how a Q4 shipping window actually closes. Three questions worth asking before your next order.",
+    "fr": "Qui surveille vraiment votre commande dans l'usine, ce que vérifie une inspection indépendante, et comment une fenêtre d'expédition du T4 se referme pour de bon. Trois questions à poser avant votre prochaine commande.",
+    "de": "Wer Ihre Bestellung wirklich in der Fabrik im Blick hat, was eine unabhängige Inspektion prüft — und woran ein Q4-Versandfenster tatsächlich schließt. Drei Fragen vor Ihrer nächsten Bestellung.",
+    "it": "Chi guarda davvero il tuo ordine in fabbrica, cosa verifica un'ispezione indipendente e come si chiude realmente una finestra di spedizione del Q4. Tre domande da farsi prima del prossimo ordine.",
+    "es": "Quién vigila de verdad su pedido en la fábrica, qué revisa una inspección independiente y cómo se cierra realmente una ventana de envío del cuarto trimestre. Tres preguntas antes de su próximo pedido.",
+    "pt": "Quem vigia mesmo a sua encomenda na fábrica, o que uma inspeção independente verifica e como fecha realmente uma janela de expedição do quarto trimestre. Três perguntas antes da próxima encomenda."
+  },
+  "picks_hero_sub": {
+    "en": "Someone on the factory floor. Inspections that don't come from the factory. And a Q4 shipping window that closes on the gate-in deadline — not on your booking confirmation.",
+    "fr": "Quelqu'un sur le sol de l'usine. Des inspections qui ne viennent pas de l'usine. Et une fenêtre d'expédition du T4 qui se referme sur la date limite d'entrée au terminal — pas sur votre confirmation de réservation.",
+    "de": "Jemand in der Produktionshalle. Inspektionen, die nicht von der Fabrik kommen. Und ein Q4-Versandfenster, das an der Gate-in-Frist schließt — nicht an Ihrer Buchungsbestätigung.",
+    "it": "Qualcuno sul pavimento della fabbrica. Ispezioni che non arrivano dalla fabbrica. E una finestra di spedizione del Q4 che si chiude alla scadenza del gate-in — non alla conferma di prenotazione.",
+    "es": "Alguien en el suelo de la fábrica. Inspecciones que no vienen de la fábrica. Y una ventana de envío del cuarto trimestre que se cierra con la fecha límite de entrada en terminal — no con su confirmación de reserva.",
+    "pt": "Alguém no chão da fábrica. Inspeções que não vêm da fábrica. E uma janela de expedição do quarto trimestre que fecha no prazo de entrada no terminal — não na sua confirmação de reserva."
+  },
+  "picks_closing": {
+    "en": "Three questions. One simple answer: someone on your side, where your goods are made.",
+    "fr": "Trois questions. Une réponse simple : quelqu'un de votre côté, là où vos marchandises sont fabriquées.",
+    "de": "Drei Fragen. Eine einfache Antwort: jemand auf Ihrer Seite, dort, wo Ihre Waren entstehen.",
+    "it": "Tre domande. Una risposta semplice: qualcuno dalla tua parte, dove nascono le tue merci.",
+    "es": "Tres preguntas. Una respuesta simple: alguien de su lado, donde se fabrican sus mercancías.",
+    "pt": "Três perguntas. Uma resposta simples: alguém do seu lado, onde as suas mercadorias são feitas."
+  },
+  "factories_subtitle": {
+    "en": "Anyone can find you a factory. Finding one that stays honest — on the second order, in the busy season, in the year you're not watching — that's the actual work.",
+    "fr": "N'importe qui peut vous trouver une usine. En trouver une qui reste honnête — à la deuxième commande, en haute saison, l'année où vous ne regardez pas — c'est cela, le vrai travail.",
+    "de": "Eine Fabrik findet Ihnen jeder. Eine zu finden, die ehrlich bleibt — bei der zweiten Bestellung, in der Hochsaison, in dem Jahr, in dem Sie nicht hinsehen — das ist die eigentliche Arbeit.",
+    "it": "Chiunque può trovarti una fabbrica. Trovarne una che resti onesta — al secondo ordine, in alta stagione, nell'anno in cui non guardi — quello è il vero lavoro.",
+    "es": "Cualquiera puede encontrarle una fábrica. Encontrar una que siga siendo honesta — en el segundo pedido, en temporada alta, el año en que usted no mira — ese es el verdadero trabajo.",
+    "pt": "Qualquer pessoa lhe encontra uma fábrica. Encontrar uma que se mantenha honesta — na segunda encomenda, na época alta, no ano em que não está a olhar — esse é o verdadeiro trabalho."
+  },
+  "factories_block2_text": {
+    "en": "We turn down more workshops than we take on, and removals are permanent. The list stays short on purpose. A standard nobody can enforce everywhere is not a standard — it's a wish.",
+    "fr": "Nous refusons plus d'ateliers que nous n'en acceptons, et les sorties du réseau sont définitives. La liste reste courte volontairement. Un standard qu'on ne peut pas faire respecter partout n'est pas un standard, c'est un vœu pieux.",
+    "de": "Wir sagen mehr Werkstätten ab, als wir aufnehmen, und Ausschlüsse sind endgültig. Die Liste bleibt bewusst kurz. Ein Standard, den man nicht überall durchsetzen kann, ist kein Standard — sondern ein Wunsch.",
+    "it": "Rifiutiamo più laboratori di quanti ne accettiamo, e le esclusioni sono definitive. La lista resta corta di proposito. Uno standard che non puoi far rispettare ovunque non è uno standard, è un desiderio.",
+    "es": "Rechazamos más talleres de los que aceptamos, y las salidas de la red son definitivas. La lista se mantiene corta a propósito. Un estándar que no puedes hacer cumplir en todas partes no es un estándar, es un deseo.",
+    "pt": "Recusamos mais oficinas do que aceitamos, e as saídas da rede são definitivas. A lista mantém-se curta de propósito. Um padrão que não consegue fazer cumprir em todo o lado não é um padrão, é um desejo."
+  },
+  "factories_closing": {
+    "en": "The hard part was never finding a factory. It's finding one that stays honest when nobody is watching. Being there is how we keep that promise — order after order.",
+    "fr": "Le plus dur n'a jamais été de trouver une usine. C'est d'en trouver une qui reste honnête quand personne ne regarde. Être sur place, c'est ainsi que nous tenons cette promesse — commande après commande.",
+    "de": "Schwierig war nie, eine Fabrik zu finden. Schwierig ist, eine zu finden, die ehrlich bleibt, wenn niemand hinsieht. Vor Ort zu sein ist, wie wir dieses Versprechen halten — Bestellung für Bestellung.",
+    "it": "La parte difficile non è mai stata trovare una fabbrica. È trovarne una che resta onesta quando nessuno guarda. Essere lì è il modo in cui manteniamo questa promessa — ordine dopo ordine.",
+    "es": "Lo difícil nunca fue encontrar una fábrica. Es encontrar una que siga siendo honesta cuando nadie mira. Estar allí es cómo mantenemos esa promesa — pedido tras pedido.",
+    "pt": "O difícil nunca foi encontrar uma fábrica. É encontrar uma que se mantenha honesta quando ninguém olha. Estar lá é como mantemos essa promessa — encomenda após encomenda."
+  },
+  "quality_closing": {
+    "en": "The report reaches you before your balance is due. That order is not an accident — it's the whole point.",
+    "fr": "Le rapport vous parvient avant l'échéance de votre solde. Cet ordre des choses n'est pas un hasard — c'est tout l'intérêt du dispositif.",
+    "de": "Der Bericht erreicht Sie, bevor Ihre Restzahlung fällig ist. Diese Reihenfolge ist kein Zufall — sie ist der ganze Punkt.",
+    "it": "Il report ti arriva prima della scadenza del saldo. Questo ordine non è un caso — è tutto il punto.",
+    "es": "El informe le llega antes del vencimiento de su saldo. Ese orden no es casualidad — es todo el sentido.",
+    "pt": "O relatório chega-lhe antes de o saldo ser exigível. Essa ordem não é um acaso — é exatamente o objetivo."
+  },
+  "freight_block3_text": {
+    "en": "The Q4 window rarely closes all at once — it slips away quietly, one small delay at a time. So we plan backward from the gate-in deadline: production, inland transit, port backlog, blank sailings. Each date comes from the one before it, not from a promise. When a step starts to slide, you hear about it while there's still something you can do.",
+    "fr": "La fenêtre du T4 ne se referme pas d'un coup — elle glisse en silence, petit retard par petit retard. Nous planifions donc à rebours depuis la date limite d'entrée au terminal : production, transport terrestre, engorgement portuaire, traversées annulées. Chaque date découle de la précédente, pas d'une promesse. Quand une étape commence à glisser, vous l'apprenez alors qu'il est encore temps d'agir.",
+    "de": "Das Q4-Fenster schließt selten mit einem Schlag — es kippt leise, eine kleine Verschiebung nach der anderen. Deshalb planen wir rückwärts ab der Gate-in-Frist: Produktion, Binnentransport, Hafenrückstau, ausgefallene Abfahrten. Jedes Datum leitet sich aus dem vorherigen ab, nicht aus einem Versprechen. Wenn eine Stufe zu rutschen beginnt, erfahren Sie es, solange Sie noch etwas tun können.",
+    "it": "La finestra del Q4 non si chiude di colpo — scivola via in silenzio, un piccolo ritardo alla volta. Per questo pianifichiamo a ritroso dalla scadenza di gate-in: produzione, trasporto interno, congestione portuale, partenze saltate. Ogni data deriva dalla precedente, non da una promessa. Quando un passaggio comincia a slittare, lo sai quando c'è ancora qualcosa da fare.",
+    "es": "La ventana del cuarto trimestre no se cierra de golpe — se escapa en silencio, un pequeño retraso tras otro. Por eso planificamos hacia atrás desde la fecha límite de entrada en terminal: producción, transporte terrestre, congestión portuaria, salidas canceladas. Cada fecha sale de la anterior, no de una promesa. Cuando un paso empieza a deslizarse, se entera mientras aún puede hacer algo.",
+    "pt": "A janela do quarto trimestre não fecha de golpe — escapa-se em silêncio, um pequeno atraso de cada vez. Por isso planeamos para trás a partir do prazo de entrada no terminal: produção, transporte terrestre, congestionamento portuário, viagens canceladas. Cada data deriva da anterior, não de uma promessa. Quando um passo começa a deslizar, fica a saber enquanto ainda há algo a fazer."
+  },
+  "freight_closing": {
+    "en": "Blank sailings, backlogs, the holiday shutdown — the window closes quietly. Plan backward from the gate-in deadline and your goods stay inside it.",
+    "fr": "Traversées annulées, engorgements, fermeture des fêtes — la fenêtre se referme en silence. Planifiez à rebours depuis la date limite d'entrée au terminal, et vos marchandises restent dedans.",
+    "de": "Ausgefallene Abfahrten, Rückstaus, die Feiertagsschließung — das Fenster schließt leise. Rückwärts ab der Gate-in-Frist planen hält Ihre Waren darin.",
+    "it": "Partenze saltate, congestioni, la chiusura delle feste — la finestra si chiude in silenzio. Pianifica a ritroso dalla scadenza di gate-in e le tue merci ci restano dentro.",
+    "es": "Salidas canceladas, congestiones, el cierre de las fiestas — la ventana se cierra en silencio. Planifique hacia atrás desde la fecha límite de entrada en terminal y sus mercancías se quedan dentro.",
+    "pt": "Viagens canceladas, congestionamentos, o fecho das festas — a janela fecha em silêncio. Planeie para trás a partir do prazo de entrada no terminal e as suas mercadorias ficam lá dentro."
+  }
+}
