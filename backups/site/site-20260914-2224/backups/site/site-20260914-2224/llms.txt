@@ -1,0 +1,36 @@
+# KALIS TORIK
+
+> Chinese furniture B2B sourcing partner serving European buyers since 2005: a personally vetted network of 100+ factories, independent on-the-ground quality control, and freight handled end to end.
+
+## Core Pages
+
+- [Home](https://kalistorik.com/en/): What KALIS TORIK does — factory matching, independent inspection, and shipping for small and mid-sized European furniture buyers.
+- [Products — Sofas](https://kalistorik.com/en/#products-sofas): Upholstered sofas sourced directly from vetted Chinese workshops, with photos and model references.
+- [Products — Beds](https://kalistorik.com/en/#products-beds): Upholstered beds available for direct-from-manufacturer sourcing.
+- [Products — Tables](https://kalistorik.com/en/#products-tables): Dining and living tables produced to buyer specifications.
+- [Products — Sofa Beds](https://kalistorik.com/en/#products-sofa-beds): Convertible sofa beds from the vetted factory network.
+- [Products — Chairs](https://kalistorik.com/en/#products-chairs): Chairs made by workshops that passed in-person vetting.
+- [How It Works](https://kalistorik.com/en/#how): The four-step process — send your spec, match the factory and lock the freight, independent inspection before you pay, and delivery from factory door to a European port.
+- [Quality Control](https://kalistorik.com/quality): Pre-production sample, mid-production check, and pre-shipment inspection run by independent third-party inspectors; buyers receive unfiltered photo and video reports before the balance is due.
+- [Factory Network](https://kalistorik.com/factories): How factories are vetted in person, kept on a deliberately short list, and removed permanently when standards slip.
+- [Freight & Logistics](https://kalistorik.com/freight): Space booking, freight rates locked before commitment, supervised loading and sealing, and planning worked backward from the gate-in deadline.
+- [FAQ](https://kalistorik.com/en/#faq): Six common buyer questions — factory capability, accountability for faulty goods, small orders, hidden costs, factory QC photos, and buying direct vs. local wholesalers.
+- [Contact](https://kalistorik.com/en/#contact): Send requirements via the website form, email, WhatsApp Business, or social channels; the sourcing team replies directly.
+
+## Blog
+
+- [Blog Index](https://kalistorik.com/blog/): Field notes from the factory floor, written for small furniture buyers who ship across borders.
+- [You Visit China Twice a Year. Your Orders Run All Twelve Months.](https://kalistorik.com/blog/post-local-value): What actually happens inside the gap between factory visits — queue reshuffles, sample drift, and paper status reports — and how on-the-ground presence closes it.
+- [You Don't Lose an Order at Unboxing. You Lose It Months Earlier.](https://kalistorik.com/blog/post-mid-production-qc): Why final inspection only discovers problems, and the checkpoints between deposit and container loading where fixes are still cheap.
+- [Your Selling Season Gets Decided While You Sleep](https://kalistorik.com/blog/post-on-the-ground-partner): How response latency across time zones quietly moves production queues and ship dates, and what delegating on-the-spot authority fixes.
+- [The Q4 Shipping Window Is Closing Faster Than Your Booking Confirmation Suggests](https://kalistorik.com/blog/post-q4-shipping-window): Port backlogs, blank sailings, and the holiday shutdown — the confirmations small furniture importers should lock down early.
+- [When Your Factory QC Photos Don't Tell the Full Story](https://kalistorik.com/blog/first-post): A real case study of selective factory QC photos, and the three questions to ask before releasing a balance payment.
+
+## Machine-Readable Knowledge Base
+
+- [OKF Bundle — Index](https://kalistorik.com/okf/index.md): Entry point to the Open Knowledge Format files — company, services, FAQ, and blog index — built for direct extraction and citation by AI systems.
+- [OKF — Company](https://kalistorik.com/okf/company.md): Who KALIS TORIK is, who they serve, and the facts behind buyer trust.
+- [OKF — Services](https://kalistorik.com/okf/services.md): The full service list — factory screening, on-site follow-up, pre-production sample, mid-production QC, pre-shipment inspection, freight and logistics.
+- [OKF — FAQ](https://kalistorik.com/okf/faq.md): The six buyer questions and answers, identical to the website FAQ.
+- [OKF — Blog Index](https://kalistorik.com/okf/blog-index.md): Blog post summaries with canonical URLs for citation.
+- [Full Knowledge File](https://kalistorik.com/llms-full.txt): One complete Markdown document covering the company, services, process, products, FAQ, and blog.

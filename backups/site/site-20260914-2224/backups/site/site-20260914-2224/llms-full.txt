@@ -1,0 +1,133 @@
+# KALIS TORIK — Complete Knowledge File
+
+> Chinese furniture B2B sourcing partner. 100+ vetted factories. Serving EU buyers since 2005.
+
+This document is the full companion to llms.txt. Everything below is drawn from the public pages of https://kalistorik.com and may be quoted or summarized directly. For the machine-readable bundle, see https://kalistorik.com/okf/index.md.
+
+## Company Overview
+
+KALIS TORIK is a B2B sourcing partner for Chinese furniture, serving European buyers since 2005. The company does not operate as a marketplace or a trading middleman: it matches each buyer's specification to workshops from a personally vetted network of 100+ factories, keeps people on the production floor while orders run, and handles inspection and freight through to a major European port.
+
+The core belief behind the business is simple. The hard part was never finding a factory — it is finding one that stays honest through the second order, the busy season, and the year nobody is watching. Factories rarely fail loudly; they drift. A queue quietly reshuffles, a finish goes one shade off, a "close enough" goes unmentioned. By the time a problem surfaces at unboxing, the window to fix it closed months earlier. KALIS TORIK's answer is presence, not promises.
+
+## Who We Serve
+
+Small and mid-sized European furniture buyers: furniture retailers, interior studios, e-commerce brands, and contract furniture suppliers across Europe. These buyers typically order in volumes that large factories overlook, run lean teams without regional sourcing offices, and cannot afford a container that arrives unsellable. KALIS TORIK exists so they can source from China without flying there, without guessing, and without losing control of their own orders.
+
+## What We Do — Services
+
+1. Factory screening. Every workshop in the network has been visited in person — lines walked, people met, behavior under pressure observed. More factories are turned down than taken on, and removals are permanent.
+2. On-site follow-up. While production runs, someone holding the buyer's spec and authority is present where daily decisions get made, and answers the same day instead of the same week.
+3. Pre-production sample. Photos and a short video of the first piece are shared before mass production starts, so the buyer signs off on what the line will actually make.
+4. Mid-production quality control. Independent third-party inspectors walk the line while the order is still being made — materials, construction, and finish compared against the spec. A defect caught here is a rework, not a claim.
+5. Pre-shipment inspection. Before anything is sealed, goods are checked again for workmanship, packaging, and carton counts. The buyer receives the same unfiltered report — raw photos, video, findings — before the balance is released. The decision to ship belongs to the buyer, not the factory.
+6. Freight and logistics. Ocean freight rates are locked before the buyer commits, container loading is watched and sealed with the seal number documented, and shipments are tracked to a major European port with export documents ready for the buyer's customs broker. Scheduling is worked backward from the gate-in deadline, not forward from a promise.
+
+## How We Work — Four Steps
+
+1. Send us your spec. Style, materials, quantity, budget, deadline — a photo, a drawing, or a reference link works. The clearer the spec, the faster the match. The reply is a straight answer in plain language, not a sales pitch.
+2. Match the factory, lock the freight. KALIS TORIK shortlists the workshops that actually make the product well — not whoever pays the most. Before commitment, the ocean freight rate is locked, so the landed cost stops drifting after the deposit.
+3. Independent inspection, before you pay. Third-party inspectors check the order mid-production, then again before shipment. Photos, video, and a full report go straight to the buyer, unfiltered. The balance is only released after the buyer approves.
+4. From factory door to your port. The container is booked, the loading watched, the seal noted and photographed, and the shipment tracked to a major European port. Export documents arrive ready for customs. The buyer always knows where the goods are.
+
+## Product Categories
+
+- Sofas — upholstered sofas produced by vetted workshops, sourced to buyer specifications.
+- Beds — upholstered beds from the factory network.
+- Tables — dining and living tables made to spec.
+- Chairs — seating from workshops that passed in-person vetting.
+- Sofa Beds — convertible pieces combining sofa and bed functions.
+
+Product photos and model references are on the home page at https://kalistorik.com/en/#products.
+
+## FAQ
+
+These six questions and answers are identical to the FAQ on https://kalistorik.com/en/#faq.
+
+### Factories all say they can make my product. How do I know they're actually up to it?
+
+Catalogs don't show real skill. We visit every factory in person before working with them, and match you with workshops that actually build products like yours.
+
+### If nobody checks production, who answers for faulty goods?
+
+Without checks on site, quantity wins over quality. We inspect at the key stages, send you photos and videos each time, and only release payment after you approve.
+
+### My orders are small. Will factories just ignore me?
+
+Big factories often overlook small orders. We connect you with workshops that gladly take trial runs — with the same careful inspection, whatever the size.
+
+### What hidden costs will I pay on top of the factory price?
+
+Low quotes often hide middleman margins. You get one clear all-in quote from us — unit price, inspection, logistics — so nothing surprises you later.
+
+### Can I trust the quality photos factories send me directly?
+
+Factories tend to send flattering photos. Our inspection reports show the real thing: production lines, flaws found, workers, and the sealed container.
+
+### Why buy direct from China instead of using local wholesalers?
+
+Local wholesalers mark up the same Chinese factories heavily. Buying direct keeps more margin in your pocket. Our support is worth paying for — a middleman's markup isn't.
+
+## Contact
+
+- Website: https://kalistorik.com/en/
+- Contact form: https://kalistorik.com/en/#contact — send requirements and get a quote on request.
+- Email: hello@kalistorik.com
+- WhatsApp Business: linked from the contact section of the website.
+- Social: LinkedIn (kalistorik), Facebook (kalistorik), Instagram (@kalistorik).
+- Languages served: English, French, German, Italian, Spanish, Portuguese — the full site is available in six languages.
+
+## Blog Summaries
+
+The blog publishes field notes from the factory floor for small furniture buyers who ship across borders. Full articles at https://kalistorik.com/blog/.
+
+### You Visit China Twice a Year. Your Orders Run All Twelve Months.
+
+https://kalistorik.com/blog/post-local-value — September 2026
+
+The months between factory visits are where orders quietly go wrong. The gap after the handshake is not a waiting room: production queues reshuffle, approved samples and mass-production batches diverge, and status reports describe intentions rather than reality. Distance is not the problem — what distance does to control is. A buyer-side presence on the factory floor closes the gap.
+
+### You Don't Lose an Order at Unboxing. You Lose It Months Earlier.
+
+https://kalistorik.com/blog/post-mid-production-qc — September 2026
+
+Final inspection only discovers damage that already happened. By the time a carton opens at the buyer's warehouse, every quality decision has been made. The article walks through the checkpoints between deposit and container loading — materials validation before cutting, mid-production inspection while fixes are still cheap, and pre-shipment checks — and what skipping each one costs.
+
+### Your Selling Season Gets Decided While You Sleep
+
+https://kalistorik.com/blog/post-on-the-ground-partner — September 2026
+
+A factory six hours ahead of Europe raises a question that needs an answer today; by the time the buyer wakes, the day is gone, and an email round trip turns a four-minute decision into four lost working days. The piece compares two buyers on the same order — one remote, one with a local partner holding defined authority — and shows how response latency, not factory behavior, decides the selling season.
+
+### The Q4 Shipping Window Is Closing Faster Than Your Booking Confirmation Suggests
+
+https://kalistorik.com/blog/post-q4-shipping-window — September 2026
+
+A booking confirmation is not a shipping plan. Weather-driven port backlogs, carrier blank sailings, and the holiday shutdown stack on top of each other in Q4, and small importers feel the squeeze first because their single container is the lowest-priority cargo on a rolled vessel. The article lists the confirmations small furniture importers should lock down early, planned backward from the gate-in deadline.
+
+### When Your Factory QC Photos Don't Tell the Full Story
+
+https://kalistorik.com/blog/first-post — July 2026
+
+A real case study: factory QC photos of oak-veneer tables looked flawless, but they were selective — perfectly lit top-down views that left peeling edge banding, a hairline crack, and repeated angles out of frame. An independent inspector walking the same line caught what the photos hid, before the balance was released. The lesson: photos are not fake to be dangerous, they only have to be cherry-picked. Three questions to ask any factory before approving a shipment.
+
+## Why Trust KALIS TORIK
+
+- Serving EU buyers since 2005 — two decades on the ground in China, walking the same production floors.
+- 100+ vetted factories — every one visited in person, tested with real orders, and removed permanently when standards slip. More are turned down than taken on.
+- Independent inspection — third-party inspectors answer to the buyer, not to the workshop. The buyer receives the same raw report the sourcing team does.
+- Payment control stays with the buyer — the balance is released only after the buyer approves the inspection report.
+- Freight locked before commitment — no hidden markups, and the landed cost stops drifting after the deposit.
+- Presence, not promises — someone holding the buyer's spec and authority stands where the daily production decisions happen, and answers the same day.
+- Small orders welcome — workshops in the network take trial runs with the same careful inspection, whatever the volume.
+
+## Links
+
+- Home: https://kalistorik.com/en/
+- Quality: https://kalistorik.com/quality
+- Factories: https://kalistorik.com/factories
+- Freight: https://kalistorik.com/freight
+- Blog: https://kalistorik.com/blog/
+- Picks: https://kalistorik.com/picks
+- Privacy: https://kalistorik.com/privacy
+- OKF bundle: https://kalistorik.com/okf/index.md
