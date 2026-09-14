@@ -1,0 +1,13 @@
+# KALIS TORIK
+> Chinese furniture B2B sourcing partner. 100+ vetted factories. Serving EU buyers since 2005.
+
+- Main: https://kalistorik.com/en
+- Products: https://kalistorik.com/en (product categories section)
+- About / How it works: https://kalistorik.com/en#how
+- Blog: https://kalistorik.com/blog/
+- Blog post: https://kalistorik.com/blog/first-post
+- Blog post: https://kalistorik.com/blog/post-local-value
+- Blog post: https://kalistorik.com/blog/post-mid-production-qc
+- Blog post: https://kalistorik.com/blog/post-on-the-ground-partner
+- Blog post: https://kalistorik.com/blog/post-q4-shipping-window
+- Contact: https://kalistorik.com/en#contact
