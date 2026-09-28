@@ -1,0 +1,60 @@
+diff --git a/factories.html b/factories.html
+index 39ed45d..a635e53 100644
+--- a/factories.html
++++ b/factories.html
+@@ -9,8 +9,8 @@
+ <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260612">
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+ <link rel="manifest" href="/site.webmanifest">
+-  <link rel="canonical" href="https://kalistorik.com/factories?lang=en" />
+-  <link rel="alternate" hreflang="en" href="https://kalistorik.com/factories?lang=en" />
++  <link rel="canonical" href="https://kalistorik.com/factories" />
++  <link rel="alternate" hreflang="en" href="https://kalistorik.com/factories" />
+   <link rel="alternate" hreflang="fr" href="https://kalistorik.com/factories?lang=fr" />
+   <link rel="alternate" hreflang="de" href="https://kalistorik.com/factories?lang=de" />
+   <link rel="alternate" hreflang="it" href="https://kalistorik.com/factories?lang=it" />
+diff --git a/freight.html b/freight.html
+index 4bebe75..9f55320 100644
+--- a/freight.html
++++ b/freight.html
+@@ -9,8 +9,8 @@
+ <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260612">
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+ <link rel="manifest" href="/site.webmanifest">
+-  <link rel="canonical" href="https://kalistorik.com/freight?lang=en" />
+-  <link rel="alternate" hreflang="en" href="https://kalistorik.com/freight?lang=en" />
++  <link rel="canonical" href="https://kalistorik.com/freight" />
++  <link rel="alternate" hreflang="en" href="https://kalistorik.com/freight" />
+   <link rel="alternate" hreflang="fr" href="https://kalistorik.com/freight?lang=fr" />
+   <link rel="alternate" hreflang="de" href="https://kalistorik.com/freight?lang=de" />
+   <link rel="alternate" hreflang="it" href="https://kalistorik.com/freight?lang=it" />
+diff --git a/picks.html b/picks.html
+index 75e7920..95af76f 100644
+--- a/picks.html
++++ b/picks.html
+@@ -9,8 +9,8 @@
+ <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260612">
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+ <link rel="manifest" href="/site.webmanifest">
+-  <link rel="canonical" href="https://kalistorik.com/picks?lang=en" />
+-  <link rel="alternate" hreflang="en" href="https://kalistorik.com/picks?lang=en" />
++  <link rel="canonical" href="https://kalistorik.com/picks" />
++  <link rel="alternate" hreflang="en" href="https://kalistorik.com/picks" />
+   <link rel="alternate" hreflang="fr" href="https://kalistorik.com/picks?lang=fr" />
+   <link rel="alternate" hreflang="de" href="https://kalistorik.com/picks?lang=de" />
+   <link rel="alternate" hreflang="it" href="https://kalistorik.com/picks?lang=it" />
+diff --git a/quality.html b/quality.html
+index 80ae778..eadd7b0 100644
+--- a/quality.html
++++ b/quality.html
+@@ -9,8 +9,8 @@
+ <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20260612">
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+ <link rel="manifest" href="/site.webmanifest">
+-  <link rel="canonical" href="https://kalistorik.com/quality?lang=en" />
+-  <link rel="alternate" hreflang="en" href="https://kalistorik.com/quality?lang=en" />
++  <link rel="canonical" href="https://kalistorik.com/quality" />
++  <link rel="alternate" hreflang="en" href="https://kalistorik.com/quality" />
+   <link rel="alternate" hreflang="fr" href="https://kalistorik.com/quality?lang=fr" />
+   <link rel="alternate" hreflang="de" href="https://kalistorik.com/quality?lang=de" />
+   <link rel="alternate" hreflang="it" href="https://kalistorik.com/quality?lang=it" />
