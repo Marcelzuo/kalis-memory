@@ -1,0 +1,15 @@
+{
+  "type": "design-proposal",
+  "name": "design-20261106-01-europe-style-benchmark",
+  "created_at": "2026-11-06T20:50:00+08:00",
+  "design_version": "1.0",
+  "status": "direction-approved-not-deployed",
+  "canonical_rules": "design/kalistorik/website/DESIGN-SYSTEM.md",
+  "decision_log": "design/kalistorik/website/DECISION-LOG.md",
+  "based_on_site_commit": "f651a5d",
+  "scope": ["style benchmark", "V2 replan", "technical diagnosis", "taste review"],
+  "contains": ["4 reports", "2 contact sheets", "metrics CSV", "7 screens"],
+  "excluded": ["full screenshot set", "raw page metrics", "site code snapshot"],
+  "next": "two static homepage directions",
+  "deployed": false
+}
