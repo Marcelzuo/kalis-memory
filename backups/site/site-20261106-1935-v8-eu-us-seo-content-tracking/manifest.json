@@ -1,0 +1,26 @@
+{
+  "backup_name": "site-20261106-1935-v8-eu-us-seo-content-tracking",
+  "version": "v8",
+  "created_at": "2026-11-06T19:35:37+08:00",
+  "site_repo": "/Users/zuo/kalistorik-site",
+  "branch": "master",
+  "site_commit": "f651a5d",
+  "site_commit_message": "feat: 强化欧美 SEO 与站点修复",
+  "deployed": false,
+  "pushed": false,
+  "sitemap_urls": 25,
+  "new_regional_pages": 2,
+  "new_blog_posts": 4,
+  "browser_tests": {"passed": 120, "failed": 0},
+  "three_way_checks": {
+    "mammon": "PASS 5/5 final delta",
+    "lucifer": "4 posts reviewed; 7 fixes applied and verified",
+    "michael": "PASS"
+  },
+  "file_count_on_disk": 4460,
+  "tracked_file_count": 3425,
+  "size": "669M",
+  "scope": ["full site snapshot", "reports", "data"],
+  "excluded": [".git", "node_modules", ".wrangler", ".DS_Store", "tools/.venv (not tracked)"],
+  "deletion_policy": "no historical files deleted"
+}

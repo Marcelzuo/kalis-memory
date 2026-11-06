@@ -1,0 +1,175 @@
+# KALIS TORIK — Complete Knowledge File
+
+> Chinese furniture B2B sourcing partner. 100+ vetted factories. Serving EU and US buyers since 2005.
+
+This document is the full companion to llms.txt. Everything below is drawn from the public pages of https://kalistorik.com and may be quoted or summarized directly. For the machine-readable bundle, see https://kalistorik.com/okf/index.md.
+
+## Company Overview
+
+KALIS TORIK is a B2B sourcing partner for Chinese furniture, working with European and US buyers since 2005. It matches a buyer's specification to workshops from a vetted network of 100+ factories, keeps someone on the production floor while an order runs, and coordinates inspection and freight to the destination port.
+
+Factories rarely fail all at once. A queue moves, a finish comes out one shade off, a substitution goes unmentioned, and the first clear sign is often the carton at the buyer's warehouse. The work is to catch those changes while the factory can still correct them: before mass production, around 30% completion, and before the container is sealed.
+
+## Who We Serve
+
+Small and mid-sized furniture buyers in Europe and the United States: retailers, interior studios, e-commerce brands, and contract suppliers. These buyers typically order in volumes that large factories overlook, run lean teams without regional sourcing offices, and cannot afford a container that arrives unsellable. KALIS TORIK exists so they can source from China without flying there and without handing control of the order to the factory.
+
+## Regional Pages
+
+- Europe: https://kalistorik.com/en/furniture-sourcing-europe/ — EU entry file, EUDR and GPSR evidence, QC, and freight to Antwerp-Bruges, Rotterdam, Hamburg, Le Havre, Valencia and Genoa.
+- United States: https://kalistorik.com/en/furniture-sourcing-usa/ — IOR, EIN, bond, ISF, HTS, Section 301, Lacey and CPSC checkpoints, QC, and freight to Los Angeles, Long Beach, Newark, Savannah and Houston.
+
+## What We Do — Services
+
+1. Factory screening. Every workshop in the network has been visited in person — lines walked, people met, behavior under pressure observed. More factories are turned down than taken on, and removals are permanent.
+2. On-site follow-up. While production runs, someone holding the buyer's spec and authority is present where daily decisions get made, and answers the same day instead of the same week.
+3. Pre-production sample. Photos and a short video of the first piece are shared before mass production starts, so the buyer signs off on what the line will actually make.
+4. Mid-production quality control. Independent third-party inspectors walk the line while the order is still being made — materials, construction, and finish compared against the spec. A defect caught here is a rework, not a claim.
+5. Pre-shipment inspection. Before anything is sealed, goods are checked again for workmanship, packaging, and carton counts. The buyer receives the same unfiltered report — raw photos, video, findings — before the balance is released. The decision to ship belongs to the buyer, not the factory.
+6. Freight and logistics. Ocean freight rates are locked before the buyer commits, container loading is watched and sealed with the seal number documented, and shipments are tracked to a major European port with export documents ready for the buyer's customs broker. Scheduling is worked backward from the gate-in deadline, not forward from a promise.
+
+## How We Work — Four Steps
+
+1. Send us your spec. Style, materials, quantity, budget, deadline — a photo, a drawing, or a reference link works. The clearer the spec, the faster the match. The reply is a straight answer in plain language, not a sales pitch.
+2. Match the factory, lock the freight. KALIS TORIK shortlists the workshops that actually make the product well — not whoever pays the most. Before commitment, the ocean freight rate is locked, so the landed cost stops drifting after the deposit.
+3. Independent inspection, before you pay. Third-party inspectors check the order mid-production, then again before shipment. Photos, video, and a full report go straight to the buyer, unfiltered. The balance is only released after the buyer approves.
+4. From factory door to your port. The container is booked, the loading watched, the seal noted and photographed, and the shipment tracked to a major European port. Export documents arrive ready for customs. The buyer always knows where the goods are.
+
+## Product Categories
+
+- Sofas — upholstered sofas produced by vetted workshops, sourced to buyer specifications.
+- Beds — upholstered beds from the factory network.
+- Tables — dining and living tables made to spec.
+- Chairs — seating from workshops that passed in-person vetting.
+- Sofa Beds — convertible pieces combining sofa and bed functions.
+
+Product photos and model references are on the home page at https://kalistorik.com/en/#products.
+
+## FAQ
+
+These six questions and answers are identical to the FAQ on https://kalistorik.com/en/#faq.
+
+### Factories all say they can make my product. How do I know they're actually up to it?
+
+Catalogs don't show real skill. We visit every factory in person before working with them, and match you with workshops that actually build products like yours.
+
+### If nobody checks production, who answers for faulty goods?
+
+Without checks on site, quantity wins over quality. We inspect at the key stages, send you photos and videos each time, and only release payment after you approve.
+
+### My orders are small. Will factories just ignore me?
+
+Big factories often overlook small orders. We connect you with workshops that gladly take trial runs — with the same careful inspection, whatever the size.
+
+### What hidden costs will I pay on top of the factory price?
+
+Low quotes often hide middleman margins. You get one clear all-in quote from us — unit price, inspection, logistics — so nothing surprises you later.
+
+### Can I trust the quality photos factories send me directly?
+
+Factories tend to send flattering photos. Our inspection reports show the real thing: production lines, flaws found, workers, and the sealed container.
+
+### Why buy direct from China instead of using local wholesalers?
+
+Local wholesalers mark up the same Chinese factories heavily. Buying direct keeps more margin in your pocket. Our support is worth paying for — a middleman's markup isn't.
+
+## Contact
+
+- Website: https://kalistorik.com/en/
+- Contact form: https://kalistorik.com/en/#contact — send requirements and get a quote on request.
+- Email: hello@kalistorik.com
+- Social: LinkedIn (kalistorik), Facebook (kalistorik), Instagram (@kalistorik).
+- Languages served: English, French, German, Italian, Spanish, Portuguese — the full site is available in six languages.
+
+## Blog Summaries
+
+The blog publishes field notes from the factory floor for small furniture buyers who ship across borders. Full articles at https://kalistorik.com/blog/.
+
+### You Visit China Twice a Year. Your Orders Run All Twelve Months.
+
+https://kalistorik.com/blog/post-local-value — September 2026
+
+The months between factory visits are where orders quietly go wrong. The gap after the handshake is not a waiting room: production queues reshuffle, approved samples and mass-production batches diverge, and status reports describe intentions rather than reality. Distance is not the problem — what distance does to control is. A buyer-side presence on the factory floor closes the gap.
+
+### You Don't Lose an Order at Unboxing. You Lose It Months Earlier.
+
+https://kalistorik.com/blog/post-mid-production-qc — September 2026
+
+Final inspection only discovers damage that already happened. By the time a carton opens at the buyer's warehouse, every quality decision has been made. The article walks through the checkpoints between deposit and container loading — materials validation before cutting, mid-production inspection while fixes are still cheap, and pre-shipment checks — and what skipping each one costs.
+
+### Your Selling Season Gets Decided While You Sleep
+
+https://kalistorik.com/blog/post-on-the-ground-partner — September 2026
+
+A factory six hours ahead of Europe raises a question that needs an answer today; by the time the buyer wakes, the day is gone, and an email round trip turns a four-minute decision into four lost working days. The piece compares two buyers on the same order — one remote, one with a local partner holding defined authority — and shows how response latency, not factory behavior, decides the selling season.
+
+### The Q4 Shipping Window Is Closing Faster Than Your Booking Confirmation Suggests
+
+https://kalistorik.com/blog/post-q4-shipping-window — September 2026
+
+A booking confirmation is not a shipping plan. Weather-driven port backlogs, carrier blank sailings, and the holiday shutdown stack on top of each other in Q4, and small importers feel the squeeze first because their single container is the lowest-priority cargo on a rolled vessel. The article lists the confirmations small furniture importers should lock down early, planned backward from the gate-in deadline.
+
+### When Your Factory QC Photos Don't Tell the Full Story
+
+https://kalistorik.com/blog/first-post — July 2026
+
+A real case study: factory QC photos of oak-veneer tables looked flawless, but they were selective — perfectly lit top-down views that left peeling edge banding, a hairline crack, and repeated angles out of frame. An independent inspector walking the same line caught what the photos hid, before the balance was released. The lesson: photos are not fake to be dangerous, they only have to be cherry-picked. Three questions to ask any factory before approving a shipment.
+
+### EUDR for Furniture Importers: What Changes Before Your Next Wooden Order Lands in the EU
+
+https://kalistorik.com/blog/post-eudr-wooden-furniture — October 2026
+
+The EU Deforestation Regulation moves the paperwork for wooden furniture from the factory to the EU importer of record: the due diligence statement is the obligation of the operator placing goods on the EU market, and no factory export department can take that liability away. The article breaks down the evidence customs will ask for — geolocation of the harvest plots, traceability through every hand-off from forest to mill to assembly factory, proof of legal harvest, and a defensible risk assessment. Because each item lives on factory floors and in local supplier networks, EUDR becomes a sourcing problem before a legal one: request the timber chain in writing and obtain geolocation data before the next order ships.
+
+### Shipping Furniture from China to Europe: What First-Time Importers Get Wrong About the Journey
+
+https://kalistorik.com/blog/post-shipping-furniture-china-to-europe — October 2026
+
+First-time importers lose money on the journey, not on the product. This buyer-side walkthrough covers the decisions between factory gate and warehouse door. The Incoterm on the quotation is a division of labor and liability: buyers chasing the lowest headline price inherit origin port charges, export documentation and insurance gaps they never priced in. LCL shipments face a consolidation warehouse cut-off earlier than the vessel's; missing it means waiting for the next consolidation, and one late factory delays everyone's cargo in the box. The article lists the documents that decide whether a container moves — commercial invoice and packing list, bill of lading, certificate of origin, and wood packaging declaration — why errors are only fixable before departure.
+
+### Factory Audit Checklist for Furniture Buyers: What to Check Before You Place the First Order
+
+https://kalistorik.com/blog/post-factory-audit-checklist — November 2026
+
+A factory audit is not a showroom visit. It verifies who owns the production lines, whether key processes are outsourced, how quality control actually works, and whether the approved sample can be reproduced at order volume. The checklist covers the legal entity and address match, equipment fit for the product category, first-piece confirmation and inspection records, retained samples, and commercial red flags such as a mismatched contracting entity or payment to a personal account. It closes with a pass / conditional pass / fail decision and the controls to write into a trial order.
+
+### Furniture MOQ from China: What Small Buyers Get Wrong About Minimum Order Quantities
+
+https://kalistorik.com/blog/post-furniture-moq-china — November 2026
+
+MOQ is not a fixed policy; it is the factory's cost recovery for setup, material batches, finishing cycles, and line time. The number means nothing until the buyer knows whether it is quoted per SKU, per material, or per order — a distinction that routinely turns "50 pieces" into four separate 50-piece minimums. The article covers what actually moves the number (standard colours, mixed SKUs within a series, flexible timing, sample or setup fees, a credible trial-then-repeat plan), the LCL charges that make a low MOQ expensive per unit, the six details to send for a real per-SKU quote, and a trial-review-repeat path instead of a magic number.
+
+### Importing Furniture from China to Belgium: A First-Order Checklist
+
+https://kalistorik.com/blog/post-importing-furniture-china-belgium — November 2026
+
+The container berthing at Antwerp-Bruges is the last visible step, not the hard part. A first Belgium furniture import is five jobs: identity (who is importer of record, with an EORI and a confirmed VAT position), documents (commercial invoice, packing list, bill of lading, HS classification, certificate of origin, ISPM 15, EUDR file), compliance (EUDR for wooden furniture and the EU product-safety framework, including an identifiable responsible operator), quality control before shipment, and logistics from the port to the warehouse. The article covers direct versus indirect customs representation, Belgium's 21% standard import VAT, the landed-cost blocks first-time buyers miss, why CE marking is not a blanket furniture requirement, and a ten-item first-order checklist.
+
+### Importing Furniture from China to the US: A First-Order Checklist
+
+https://kalistorik.com/blog/post-importing-furniture-china-usa — November 2026
+
+The US is not the EU process with a different flag: no EORI, no import VAT to defer, no CE question — but a customs bond to buy, an ISF filing due before the container leaves China, and a tariff line that can move. The article walks through importer of record and EIN, single-entry versus continuous bond, ISF 10+2 timing, HTSUS classification and Section 301 exposure for Chinese-origin goods, the Lacey Act declaration for wood-containing products, category-specific CPSC rules, and the port-to-warehouse chain (chassis, drayage, detention, dock appointment). It closes with a ten-item first-order checklist and an explicit note that US destination port and service scope are confirmed before quoting.
+
+## Why Trust KALIS TORIK
+
+- Serving EU and US buyers since 2005 — two decades on the ground in China, walking the same production floors.
+- 100+ vetted factories — every one visited in person, tested with real orders, and removed permanently when standards slip. More are turned down than taken on.
+- Independent inspection — third-party inspectors answer to the buyer, not to the workshop. The buyer receives the same raw report the sourcing team does.
+- Payment control stays with the buyer — the balance is released only after the buyer approves the inspection report.
+- Freight quoted before commitment — the routing and cost are fixed before the deposit, so the landed cost does not move afterward.
+- Someone in the factory — a person holding the buyer's spec and authority stands where the daily production decisions happen, and answers the same day.
+- Small orders welcome — workshops in the network take trial runs with the same careful inspection, whatever the volume.
+
+## Links
+
+- Home: https://kalistorik.com/en/
+- Europe: https://kalistorik.com/en/furniture-sourcing-europe/
+- United States: https://kalistorik.com/en/furniture-sourcing-usa/
+- Quality: https://kalistorik.com/quality
+- Factories: https://kalistorik.com/factories
+- Freight: https://kalistorik.com/freight
+- Blog: https://kalistorik.com/blog/
+- Picks: https://kalistorik.com/picks
+- Privacy: https://kalistorik.com/privacy
+- OKF bundle: https://kalistorik.com/okf/index.md

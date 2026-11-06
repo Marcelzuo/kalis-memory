@@ -1,0 +1,122 @@
+PASS en title — China Furniture Sourcing for Europe & the US | KALIS TORIK
+PASS en one H1 — 1
+PASS en html lang — en
+PASS en FAQ opens
+PASS en cookie banner
+PASS en cookie accept
+PASS en lang dropdown
+PASS en form starts disabled
+PASS en form enables after consent
+PASS en contact form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS en newsletter success — Thank you. Your inquiry is with us; we will reply by email.
+PASS en lightbox opens
+PASS en mobile menu button
+PASS en mobile menu opens
+PASS en console errors
+PASS fr title — Sourcing mobilier Chine → Europe & USA | KALIS TORIK
+PASS fr one H1 — 1
+PASS fr html lang — fr
+PASS fr FAQ opens
+PASS fr cookie banner
+PASS fr cookie accept
+PASS fr lang dropdown
+PASS fr form starts disabled
+PASS fr form enables after consent
+PASS fr contact form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS fr newsletter success — Thank you. Your inquiry is with us; we will reply by email.
+PASS fr lightbox opens
+PASS fr mobile menu button
+PASS fr mobile menu opens
+PASS fr console errors
+PASS de title — Möbel-Sourcing China → Europa & USA | KALIS TORIK
+PASS de one H1 — 1
+PASS de html lang — de
+PASS de FAQ opens
+PASS de cookie banner
+PASS de cookie accept
+PASS de lang dropdown
+PASS de form starts disabled
+PASS de form enables after consent
+PASS de contact form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS de newsletter success — Thank you. Your inquiry is with us; we will reply by email.
+PASS de lightbox opens
+PASS de mobile menu button
+PASS de mobile menu opens
+PASS de console errors
+PASS it title — Sourcing mobili Cina → Europa e USA | KALIS TORIK
+PASS it one H1 — 1
+PASS it html lang — it
+PASS it FAQ opens
+PASS it cookie banner
+PASS it cookie accept
+PASS it lang dropdown
+PASS it form starts disabled
+PASS it form enables after consent
+PASS it contact form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS it newsletter success — Thank you. Your inquiry is with us; we will reply by email.
+PASS it lightbox opens
+PASS it mobile menu button
+PASS it mobile menu opens
+PASS it console errors
+PASS es title — Sourcing de muebles China → Europa y EE. UU. | KALIS TORIK
+PASS es one H1 — 1
+PASS es html lang — es
+PASS es FAQ opens
+PASS es cookie banner
+PASS es cookie accept
+PASS es lang dropdown
+PASS es form starts disabled
+PASS es form enables after consent
+PASS es contact form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS es newsletter success — Thank you. Your inquiry is with us; we will reply by email.
+PASS es lightbox opens
+PASS es mobile menu button
+PASS es mobile menu opens
+PASS es console errors
+PASS pt title — Sourcing de móveis China → Europa e EUA | KALIS TORIK
+PASS pt one H1 — 1
+PASS pt html lang — pt
+PASS pt FAQ opens
+PASS pt cookie banner
+PASS pt cookie accept
+PASS pt lang dropdown
+PASS pt form starts disabled
+PASS pt form enables after consent
+PASS pt contact form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS pt newsletter success — Thank you. Your inquiry is with us; we will reply by email.
+PASS pt lightbox opens
+PASS pt mobile menu button
+PASS pt mobile menu opens
+PASS pt console errors
+PASS EU landing one H1
+PASS EU landing FAQ schema
+PASS EU landing form starts disabled
+PASS EU landing form enables
+PASS EU landing form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS EU landing console errors
+PASS EU landing mobile horizontal overflow — 0
+PASS US landing one H1
+PASS US landing FAQ schema
+PASS US landing form starts disabled
+PASS US landing form enables
+PASS US landing form success — Thank you. Your inquiry is with us; we will reply by email.
+PASS US landing console errors
+PASS US landing mobile horizontal overflow — 0
+PASS blog post-factory-audit-checklist h1
+PASS blog post-factory-audit-checklist mobile overflow — 0
+PASS blog post-factory-audit-checklist table container
+PASS blog post-factory-audit-checklist console errors
+PASS blog post-furniture-moq-china h1
+PASS blog post-furniture-moq-china mobile overflow — 0
+PASS blog post-furniture-moq-china table container
+PASS blog post-furniture-moq-china console errors
+PASS blog post-importing-furniture-china-belgium h1
+PASS blog post-importing-furniture-china-belgium mobile overflow — 0
+PASS blog post-importing-furniture-china-belgium table container
+PASS blog post-importing-furniture-china-belgium console errors
+PASS blog post-importing-furniture-china-usa h1
+PASS blog post-importing-furniture-china-usa mobile overflow — 0
+PASS blog post-importing-furniture-china-usa table container
+PASS blog post-importing-furniture-china-usa console errors
+
+TOTAL 120 PASS 120 FAIL 0
