@@ -1,0 +1,125 @@
+{
+  "created": "2026-11-06",
+  "purpose": "Homepage hero image review only; no page design",
+  "status": "pending-owner-selection",
+  "boss_requirement": "Do not rebuild the page; preserve the live structure and decorate locally only.",
+  "based_on_site_commit": "f651a5d",
+  "page_modified": false,
+  "deployed": false,
+  "review_entry": "index.html",
+  "handoff": "design/kalistorik/website/CURRENT-HANDOFF.md",
+  "source_channel": "Overseas free stock (Pexels License)",
+  "domestic_channel_result": "64 domestic high-res candidates checked; 0 met hero standard",
+  "items": [
+    {
+      "n": 1,
+      "id": "27059630",
+      "cn": "巴黎落地窗客厅",
+      "tag": "首选",
+      "note": "巴黎地标 + 高层落地窗，欧洲居住感最直接；巴黎符号较强。",
+      "center": 0.25,
+      "file": "01_27059630.jpg",
+      "full": "01_27059630.jpg"
+    },
+    {
+      "n": 2,
+      "id": "36777967",
+      "cn": "绿色书墙客厅",
+      "tag": "首选",
+      "note": "绿书墙 + 橙色地毯，色彩最完整，编辑感强；元素稍多。",
+      "center": 0.45,
+      "file": "02_36777967.jpg",
+      "full": "02_36777967.jpg"
+    },
+    {
+      "n": 3,
+      "id": "36777534",
+      "cn": "蓝沙发艺术客厅",
+      "tag": "首选",
+      "note": "蓝沙发 + 抽象画 + 奶油墙，现代但不冷，平衡最好。",
+      "center": 0.48,
+      "file": "03_36777534.jpg",
+      "full": "03_36777534.jpg"
+    },
+    {
+      "n": 4,
+      "id": "20949417",
+      "cn": "明亮开放式客厅",
+      "tag": "首选",
+      "note": "开阔、明亮、绿岛台 + 艺术画，空间感最舒服，最耐看。",
+      "center": 0.5,
+      "file": "04_20949417.jpg",
+      "full": "04_20949417.jpg"
+    },
+    {
+      "n": 5,
+      "id": "34086242",
+      "cn": "暖木色会客厅",
+      "tag": "备选",
+      "note": "木色、灰绿、白纱帘，温暖高级；略偏酒店感。",
+      "center": 0.45,
+      "file": "05_34086242.jpg",
+      "full": "05_34086242.jpg"
+    },
+    {
+      "n": 6,
+      "id": "14935546",
+      "cn": "巴黎烛光餐厅",
+      "tag": "备选",
+      "note": "巴黎餐厅 + 烛光 + 彩色餐椅，氛围最好，适合第二屏。",
+      "center": 0.48,
+      "file": "06_14935546.jpg",
+      "full": "06_14935546.jpg"
+    },
+    {
+      "n": 7,
+      "id": "8279961",
+      "cn": "彩色餐椅餐厅",
+      "tag": "备选",
+      "note": "彩色餐椅 + 阳光窗，活泼上镜；细节稍多。",
+      "center": 0.5,
+      "file": "07_8279961.jpg",
+      "full": "07_8279961.jpg"
+    },
+    {
+      "n": 8,
+      "id": "17899185",
+      "cn": "粉色天鹅绒会客角",
+      "tag": "备选",
+      "note": "粉色天鹅绒 + 灰墙 + 复古电话，个性强，适合生活方式场景。",
+      "center": 0.5,
+      "file": "08_17899185.jpg",
+      "full": "08_17899185.jpg"
+    },
+    {
+      "n": 9,
+      "id": "34733205",
+      "cn": "A字顶艺术空间",
+      "tag": "备选",
+      "note": "A字顶 + 彩色画墙 + 皮沙发，艺术感最强；不太像大众住宅。",
+      "center": 0.46,
+      "file": "09_34733205.jpg",
+      "full": "09_34733205.jpg"
+    },
+    {
+      "n": 10,
+      "id": "24205636",
+      "cn": "法式壁炉客厅",
+      "tag": "备选",
+      "note": "法式壁炉 + 明亮白墙，稳妥耐看；色彩相对克制。",
+      "center": 0.46,
+      "file": "10_24205636.jpg",
+      "full": "10_24205636.jpg"
+    },
+    {
+      "n": 11,
+      "id": "31737839",
+      "cn": "米白艺术客厅",
+      "tag": "备选",
+      "note": "米白 + 黑色饰边 + 黄色单椅，克制贵气；色彩不算丰富。",
+      "center": 0.5,
+      "file": "11_31737839.jpg",
+      "full": "11_31737839.jpg"
+    }
+  ]
+}
